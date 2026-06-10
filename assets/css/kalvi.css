@@ -1,0 +1,1189 @@
+:root {
+  --kalvi-primary: #4269a7;
+  --kalvi-primary-dark: #1e3a6e;
+  --kalvi-navy: #1d2d3e;
+  --kalvi-text: #1c2b3a;
+  --kalvi-text-muted: #334d65;
+  --kalvi-text-soft: #5e778f;
+  --kalvi-cream: #fff7e2;
+  --kalvi-cream-dark: #fdedc2;
+  --kalvi-gold: #f5c541;
+  --kalvi-nav-bg: #f4faff;
+  --kalvi-problem-bg: #fafaf8;
+  --kalvi-border: #e8f0f8;
+  --kalvi-gutter: 64px;
+  --kalvi-section-py: 80px;
+  --kalvi-nav-h: 72px;
+  --bs-primary: #4269a7;
+  --bs-font-sans-serif: "Roboto", system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Roboto", system-ui, sans-serif;
+  color: var(--kalvi-text);
+  overflow-x: hidden;
+  padding-top: var(--kalvi-nav-h);
+}
+
+.kalvi-container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 992px) {
+  .kalvi-container {
+    padding-left: var(--kalvi-gutter);
+    padding-right: var(--kalvi-gutter);
+  }
+}
+
+/* Navbar */
+.kalvi-navbar {
+  background: var(--kalvi-nav-bg);
+  min-height: var(--kalvi-nav-h);
+}
+
+.kalvi-navbar .navbar-brand img {
+  width: 59px;
+  height: 59px;
+  object-fit: contain;
+}
+
+.kalvi-navbar .nav-link {
+  color: #000;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+
+.kalvi-navbar .nav-link.active {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@media (min-width: 992px) {
+  .kalvi-navbar .navbar-nav {
+    gap: 2rem;
+  }
+}
+
+.btn-kalvi-outline {
+  border: 1px solid var(--kalvi-primary);
+  color: var(--kalvi-primary);
+  border-radius: 12px;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+.btn-kalvi-outline:hover {
+  background: var(--kalvi-primary);
+  color: #fff;
+}
+
+.btn-kalvi-primary {
+  background: var(--kalvi-primary);
+  border: 1px solid var(--kalvi-primary);
+  color: #fff;
+  border-radius: 12px;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+.btn-kalvi-primary:hover {
+  background: var(--kalvi-primary-dark);
+  border-color: var(--kalvi-primary-dark);
+  color: #fff;
+}
+
+/* Hero — Figma frame height ~800px */
+.kalvi-hero {
+  position: relative;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-top: calc(-1 * var(--kalvi-nav-h));
+}
+
+.kalvi-hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.kalvi-hero__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.kalvi-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    rgba(0, 0, 0, 0.72) 0%,
+    rgba(0, 0, 0, 0.45) 45%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  z-index: 1;
+}
+
+.kalvi-hero__content {
+  position: relative;
+  z-index: 2;
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+}
+
+.kalvi-hero h1 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: clamp(2.25rem, 4.5vw, 4.2rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  max-width: 34rem;
+  margin-bottom: 1.5rem;
+}
+
+.kalvi-hero h1 em {
+  font-family: "Lora", serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.kalvi-hero .lead {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 300;
+  font-size: 1.12rem;
+  line-height: 1.62;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 31rem;
+  margin-bottom: 2rem;
+}
+
+.kalvi-btn-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 0.8125rem 1.75rem;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.kalvi-btn-icon img {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.btn-hero-primary {
+  background: var(--kalvi-primary);
+  color: #fff;
+  box-shadow: 0 10px 7.5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-hero-primary:hover {
+  color: #fff;
+  opacity: 0.92;
+}
+
+.btn-hero-outline {
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.88);
+  background: transparent;
+}
+
+.btn-hero-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.kalvi-hero__avatars img {
+  width: 43px;
+  height: 43px;
+  object-fit: cover;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-right: -12px;
+}
+
+.kalvi-hero__avatars img:last-child {
+  margin-right: 0;
+}
+
+.kalvi-hero__count {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.875rem;
+  line-height: 1;
+}
+
+.kalvi-hero__count-label {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 1.35rem;
+}
+
+/* Stats — Figma band height 367px, padding 112px */
+.kalvi-stats {
+  background: var(--kalvi-primary);
+  padding: 5.5rem 0;
+  position: relative;
+  z-index: 3;
+}
+
+.kalvi-stats .stat-item {
+  padding: 0 1rem;
+}
+
+.kalvi-stats .stat-icon-wrap {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.kalvi-stats .stat-icon-wrap img {
+  max-height: 75px;
+  width: auto;
+}
+
+.kalvi-stats .stat-value {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: clamp(2.25rem, 4vw, 3.26rem);
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.kalvi-stats .stat-label {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.35;
+}
+
+/* Sections */
+.kalvi-section {
+  padding: var(--kalvi-section-py) 0;
+}
+
+.kalvi-section-header {
+  margin-bottom: 3rem;
+}
+
+.kalvi-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--kalvi-primary);
+  margin-bottom: 1.25rem;
+}
+
+.kalvi-eyebrow::before {
+  content: "";
+  width: 18px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.kalvi-eyebrow--gold {
+  color: var(--kalvi-gold);
+}
+
+.kalvi-section-title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.85rem, 3vw, 2.65rem);
+  line-height: 1.25;
+  color: var(--kalvi-text);
+  margin-bottom: 1rem;
+}
+
+.kalvi-section-text {
+  font-family: "Noto Sans", sans-serif;
+  color: var(--kalvi-text-muted);
+  font-size: 1.06rem;
+  line-height: 1.62;
+}
+
+/* Problem */
+.kalvi-problem {
+  background: var(--kalvi-problem-bg);
+  position: relative;
+}
+
+.kalvi-problem__visual {
+  position: relative;
+  min-height: 480px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.kalvi-problem__visual img.kalvi-problem__photo {
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+.kalvi-stat-card {
+  position: absolute;
+  top: 1.25rem;
+  left: 1rem;
+  background: #fff;
+  border-left: 4px solid var(--kalvi-primary);
+  border-radius: 10px;
+  padding: 1.25rem 1.75rem;
+  box-shadow: 0 16px 28px rgba(28, 43, 58, 0.14);
+  max-width: 16rem;
+}
+
+.kalvi-stat-card .value {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--kalvi-primary);
+  line-height: 1.1;
+  margin-bottom: 0.35rem;
+}
+
+.kalvi-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.kalvi-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #fff;
+  border: 1px solid var(--kalvi-border);
+  border-radius: 4px;
+  padding: 0.55rem 0.875rem;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--kalvi-text-muted);
+}
+
+.kalvi-tag img {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.kalvi-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.kalvi-info-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.875rem;
+  color: var(--kalvi-text-muted);
+  line-height: 1.5;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--kalvi-border);
+}
+
+.kalvi-info-list li:last-child {
+  border-bottom: none;
+}
+
+.kalvi-info-list li img {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.kalvi-approved-bar {
+  display: flex;
+  width: 100%;
+  margin-top: 2.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.kalvi-approved-badge {
+  flex: 1;
+  background: var(--kalvi-primary);
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 1.25rem 1.5rem;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.kalvi-approved-badge:last-child {
+  border-right: none;
+}
+
+@media (max-width: 767px) {
+  .kalvi-approved-bar {
+    flex-direction: column-reverse;
+  }
+
+  .kalvi-approved-badge {
+    border-right: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: none;
+  }
+
+  .kalvi-approved-badge:last-child {
+    border-top: none;
+  }
+
+  .navbar-toggler {
+    order: 3;
+  }
+}
+
+/* Cards */
+.kalvi-card {
+  background: #fff;
+  border: 1px solid var(--kalvi-border);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.kalvi-card__img {
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+  background: #eee;
+}
+
+.kalvi-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.kalvi-card__badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lora", serif;
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: var(--kalvi-primary);
+}
+
+.kalvi-card__badge--year {
+  width: auto;
+  padding: 0.25rem 0.75rem;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+}
+
+.kalvi-card__body {
+  padding: 1.5rem 1.75rem 1.75rem;
+}
+
+.kalvi-card__body h3 {
+  font-family: "Lora", serif;
+  font-weight: 700;
+  font-size: 1.08rem;
+  line-height: 1.5;
+  margin-bottom: 0.65rem;
+  color: var(--kalvi-text);
+}
+
+.kalvi-card__body p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.92rem;
+  color: var(--kalvi-text-muted);
+  line-height: 1.62;
+  margin: 0;
+}
+
+/* App */
+.kalvi-app {
+  background: var(--kalvi-cream);
+}
+
+.kalvi-app__phone {
+  width: 272px;
+  max-width: 100%;
+  height: 580px;
+  background: #1d74aa;
+  border: 4px solid #000;
+  border-radius: 44px;
+  margin: 0 auto;
+  box-shadow: 0 16px 56px rgba(28, 43, 58, 0.14);
+  position: relative;
+  overflow: hidden;
+}
+
+.kalvi-app__phone img {
+  position: absolute;
+  left: -47px;
+  top: 143px;
+  width: 358px;
+  max-width: none;
+  height: auto;
+  pointer-events: none;
+}
+
+.kalvi-feature-card {
+  background: #fff;
+  border: 1px solid var(--kalvi-border);
+  border-left: 4px solid transparent;
+  border-radius: 10px;
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+  transition: background 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.kalvi-feature-card--active {
+  background: var(--kalvi-cream-dark);
+  border-color: var(--kalvi-gold);
+  border-left-color: var(--kalvi-gold);
+  box-shadow: 0 6px 14px rgba(28, 43, 58, 0.11);
+}
+
+.kalvi-feature-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: var(--kalvi-cream);
+  border: 1px solid var(--kalvi-border);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.kalvi-feature-card__icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.kalvi-feature-card--active .kalvi-feature-card__icon {
+  background: var(--kalvi-gold);
+  border-color: var(--kalvi-gold);
+}
+
+.kalvi-feature-card h3 {
+  font-family: "Lora", serif;
+  font-weight: 600;
+  font-size: 1.08rem;
+  line-height: 1.5;
+  color: var(--kalvi-text);
+  margin-bottom: 0.375rem;
+}
+
+.kalvi-feature-card p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.625;
+  color: var(--kalvi-text-muted);
+  margin: 0;
+}
+
+.kalvi-link-arrow {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  color: var(--kalvi-primary-dark);
+  text-decoration: none;
+  border-bottom: 1px solid var(--kalvi-primary-dark);
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+/* Impact */
+.kalvi-impact {
+  background: var(--kalvi-primary-dark);
+  color: #fff;
+}
+
+.kalvi-impact .kalvi-section-title {
+  color: #fff;
+}
+
+.kalvi-impact .kalvi-section-text {
+  color: #fff;
+}
+
+.kalvi-metric-bar {
+  background: transparent;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.kalvi-metric-bar .metric-item {
+  text-align: center;
+  padding: 1.75rem 1.25rem 1.5rem;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.kalvi-metric-bar .metric-icon {
+  font-size: 3.125rem;
+  line-height: 1;
+  margin: 0 auto 0.75rem;
+}
+
+.kalvi-metric-bar .metric-item:last-child {
+  border-right: none;
+}
+
+.kalvi-metric-bar .metric-value {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.8rem;
+  line-height: 1;
+  margin-bottom: 0.35rem;
+}
+
+.kalvi-metric-bar .metric-label {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.kalvi-testimonial {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-quote {
+  font-family: "Lora", serif;
+  font-size: 2.4rem;
+  line-height: 1;
+  color: #fff;
+}
+
+.kalvi-testimonial .review-type {
+  color: var(--kalvi-gold);
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+
+.kalvi-testimonial blockquote {
+  font-family: "Noto Sans", sans-serif;
+  font-style: italic;
+  font-size: 0.96rem;
+  color: rgba(255, 255, 255, 0.72);
+  border: none;
+  padding: 0;
+  margin: 0 0 1.25rem;
+  line-height: 1.625;
+  flex: 1;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.testimonial-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.testimonial-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.testimonial-name {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 700;
+  font-size: 0.88rem;
+  line-height: 1.32;
+  color: #fff;
+}
+
+.testimonial-location {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-size: 0.76rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.kalvi-carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.625rem;
+  margin-top: 2.5rem;
+}
+
+.kalvi-carousel-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.kalvi-carousel-dots .dot.active {
+  background: #fff;
+}
+
+/* Women card */
+.kalvi-women-card {
+  background: var(--kalvi-cream);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.kalvi-women-banner {
+  width: 100%;
+}
+
+.kalvi-women-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.kalvi-women-content {
+  padding: 2.5rem 3rem 3rem;
+}
+
+.kalvi-women-stat {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--kalvi-primary);
+}
+
+.kalvi-women-stat-label {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--kalvi-text-muted);
+}
+
+/* Standards */
+.kalvi-standards-bg {
+  background-color: #fafaf8;
+  position: relative;
+  overflow: hidden;
+}
+
+.kalvi-standards-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../img/doodle-pattern.png");
+  background-repeat: repeat;
+  background-size: 500px auto;
+  opacity: 0.08;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.kalvi-standards-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+.kalvi-standard-card {
+  background: #fff;
+  border: 1px solid var(--kalvi-border);
+  border-radius: 10px;
+  padding: 2.25rem 2rem;
+  height: 100%;
+}
+
+.kalvi-standard-card .badge-tag {
+  background: var(--kalvi-primary);
+  color: #fff;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 0.25rem 0.625rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 1.25rem;
+}
+
+.kalvi-standard-card h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.kalvi-standard-card .standard-icon {
+  height: 48px;
+  margin-bottom: 1rem;
+}
+
+.kalvi-standard-card .standard-icon img {
+  max-height: 48px;
+  width: auto;
+}
+
+/* Partners */
+.kalvi-partners-title {
+  color: #1e3566;
+}
+
+.kalvi-partner-desc {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.06rem;
+  line-height: 1.625;
+  color: var(--kalvi-text-muted);
+  border-left: 3px solid var(--kalvi-primary);
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.kalvi-csr-title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-size: 1.875rem;
+  color: #1e3566;
+  letter-spacing: -0.04em;
+  margin-bottom: 0;
+}
+
+.kalvi-partners-divider {
+  width: 242px;
+  height: 2px;
+  background: var(--kalvi-primary);
+  margin: 0.75rem 0;
+}
+
+.kalvi-partners-subtitle {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #1e3566;
+  letter-spacing: -0.04em;
+  margin: 0;
+}
+
+.kalvi-partner-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.kalvi-partner-row:last-child {
+  margin-bottom: 0;
+}
+
+.kalvi-partner-row img {
+  height: 70px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
+}
+
+.kalvi-partner-row img.partner-wide {
+  height: 60px;
+  max-width: 240px;
+}
+
+/* Donate */
+.kalvi-donate {
+  background: var(--kalvi-cream);
+  overflow: hidden;
+}
+
+.kalvi-donate-visual {
+  position: relative;
+  overflow: hidden;
+  min-height: 360px;
+}
+
+.kalvi-donate-visual > img {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.kalvi-price-badge {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: #fff;
+  border-left: 4px solid var(--kalvi-gold);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 16px 28px rgba(28, 43, 58, 0.14);
+}
+
+.kalvi-price-badge .price {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.7rem;
+  color: var(--kalvi-gold);
+  line-height: 1;
+}
+
+.kalvi-donate-note {
+  font-size: 0.82rem;
+  color: var(--kalvi-text-soft);
+}
+
+.kalvi-donate .kalvi-btn-icon {
+  padding: 0.875rem 1.75rem;
+}
+
+.kalvi-donate .btn-kalvi-outline {
+  border-width: 1.5px;
+  padding: 0.8125rem 1.25rem;
+}
+
+/* Final CTA */
+.kalvi-final-cta {
+  background: var(--kalvi-navy);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  padding: var(--kalvi-section-py) 0;
+}
+
+.kalvi-final-cta__image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: min(493px, 42%);
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.kalvi-final-cta .eyebrow {
+  color: #94bdff;
+  font-family: "Rubik", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.kalvi-final-cta h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: clamp(2rem, 4.5vw, 4rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -1.6px;
+}
+
+.kalvi-final-cta h2 .highlight {
+  color: var(--kalvi-gold);
+}
+
+.kalvi-final-cta .sub {
+  font-family: "Source Sans 3", sans-serif;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 1.06rem;
+  max-width: 28rem;
+}
+
+.kalvi-final-cta .kalvi-btn-icon {
+  padding: 1rem 2rem;
+}
+
+/* Footer */
+.kalvi-footer {
+  background: var(--kalvi-primary);
+  color: #fff;
+  padding: var(--kalvi-section-py) 0 2rem;
+}
+
+.kalvi-footer .brand {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 2.45rem;
+  line-height: 1.2;
+}
+
+.kalvi-footer .form-control {
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 24px;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  min-height: 48px;
+}
+
+.kalvi-footer .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.kalvi-footer .btn-subscribe {
+  background: #fff;
+  color: var(--kalvi-primary);
+  border-radius: 24px;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  min-height: 48px;
+  white-space: nowrap;
+}
+
+.kalvi-footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.kalvi-footer a:hover {
+  text-decoration: underline;
+}
+
+.kalvi-footer .social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+}
+
+.kalvi-footer .social-link img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+
+.kalvi-footer .divider {
+  border-color: rgba(255, 255, 255, 0.3);
+  margin: 2rem 0 1.5rem;
+}
+
+@media (max-width: 991.98px) {
+  .kalvi-hero {
+    min-height: 600px;
+  }
+
+  .kalvi-metric-bar .metric-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .kalvi-metric-bar .metric-item:last-child {
+    border-bottom: none;
+  }
+
+  .kalvi-final-cta__image {
+    display: none;
+  }
+
+}
+
+@media (max-width: 767.98px) {
+  /* Women card - reduce padding on mobile */
+  .kalvi-women-content {
+    padding: 1.5rem 1.25rem 2rem;
+  }
+
+  /* CTA buttons full width on mobile */
+  .kalvi-final-cta .d-flex.flex-wrap {
+    flex-direction: column;
+  }
+
+  .kalvi-final-cta .kalvi-btn-icon {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Partner logos smaller on mobile */
+  .kalvi-partner-row img {
+    height: 50px;
+    max-width: 120px;
+  }
+
+  .kalvi-partner-row img.partner-wide {
+    height: 45px;
+    max-width: 180px;
+  }
+
+  .kalvi-partner-row {
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* CSR title */
+  .kalvi-csr-title {
+    font-size: 1.5rem;
+  }
+
+  .kalvi-partners-subtitle {
+    font-size: 1.25rem;
+  }
+}
+

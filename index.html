@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<!-- Design: https://www.figma.com/design/SeuHE135v5Npbt7MuYu978/Kalvi40-final-ui---development?node-id=546-513 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalvi40 — Empowering Students Through Vernacular and Enrichment Learning</title>
+  <meta name="description" content="Kalvi40 helps government school students learn with curiosity, confidence, and clarity in their own language." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,700&family=Noto+Sans:ital@0;1&family=Oswald&family=Rubik:wght@300;400;500;600;700&family=Roboto:wght@400;600&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="assets/css/kalvi.css" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg kalvi-navbar fixed-top">
+    <div class="kalvi-container w-100 d-flex flex-wrap align-items-center">
+      <a class="navbar-brand py-2" href="index.html">
+        <img src="assets/img/logo.png" alt="Kalvi40" width="59" height="59" />
+      </a>
+      <div class="d-flex gap-2 ms-auto align-items-center order-lg-last">
+        <a href="#" class="btn btn-kalvi-outline btn-sm px-3">Login</a>
+        <a href="#" class="btn btn-kalvi-primary btn-sm px-3">Donate</a>
+      </div>
+      <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#kalviNav" aria-controls="kalviNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-grow-1" id="kalviNav">
+        <ul class="navbar-nav mx-auto py-3 py-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="our-works.html">Our Works</a></li>
+          <li class="nav-item"><a class="nav-link" href="stories.html">Stories of Change</a></li>
+          <li class="nav-item"><a class="nav-link" href="recognition.html">Recognition</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="kalvi-hero">
+    <div class="kalvi-hero__bg">
+      <img src="assets/img/hero-bg.jpg" alt="" />
+    </div>
+    <div class="kalvi-hero__overlay" aria-hidden="true"></div>
+    <div class="kalvi-container kalvi-hero__content w-100">
+      <div class="row">
+        <div class="col-lg-8 col-xl-7">
+          <h1>Empowering Rural Students Through <em>Meaningful Learning</em></h1>
+          <p class="lead">Kalvi40 helps government school students learn with curiosity, confidence, and clarity in their own language.</p>
+          <div class="d-flex flex-column flex-sm-row gap-3 mb-5">
+            <a href="#" class="kalvi-btn-icon btn-hero-primary justify-content-center">
+              <img src="assets/img/icons/hero-download.svg" alt="" width="16" height="16" />
+              Download Free App
+            </a>
+            <a href="#" class="kalvi-btn-icon btn-hero-outline justify-content-center">
+              <img src="assets/img/icons/hero-play.svg" alt="" width="16" height="16" />
+              Watch Video
+            </a>
+          </div>
+          <div class="d-flex align-items-center gap-3 flex-wrap">
+            <div class="kalvi-hero__avatars d-flex" aria-hidden="true">
+              <img src="assets/img/avatar-1.jpg" alt="" />
+              <img src="assets/img/avatar-2.jpg" alt="" />
+              <img src="assets/img/avatar-3.jpg" alt="" />
+            </div>
+            <div>
+              <div class="kalvi-hero__count text-white">61,000+</div>
+              <div class="kalvi-hero__count-label text-white-50">Students empowered</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="kalvi-stats" aria-label="Key statistics">
+    <div class="kalvi-container">
+      <div class="row g-4 g-lg-0 text-center text-white">
+        <div class="col-6 col-lg-3 stat-item">
+          <div class="stat-icon-wrap">
+            <img src="assets/img/icons/stat-play.svg" alt="" width="75" height="75" />
+          </div>
+          <div class="stat-value">1L+</div>
+          <div class="stat-label">Playstore Installs</div>
+        </div>
+        <div class="col-6 col-lg-3 stat-item">
+          <div class="stat-icon-wrap">
+            <img src="assets/img/icons/stat-star.svg" alt="" width="75" height="75" />
+          </div>
+          <div class="stat-value">500+</div>
+          <div class="stat-label">Global Volunteers</div>
+        </div>
+        <div class="col-6 col-lg-3 stat-item">
+          <div class="stat-icon-wrap">
+            <img src="assets/img/icons/stat-schools.svg" alt="" width="68" height="75" />
+          </div>
+          <div class="stat-value">1K+</div>
+          <div class="stat-label">Rural schools reached</div>
+        </div>
+        <div class="col-6 col-lg-3 stat-item">
+          <div class="stat-icon-wrap">
+            <img src="assets/img/icons/stat-students.svg" alt="" width="75" height="75" />
+          </div>
+          <div class="stat-value">61K+</div>
+          <div class="stat-label">Students have access to learning</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="kalvi-section kalvi-problem" id="problem">
+    <div class="kalvi-container">
+      <div class="row align-items-center g-5 gx-lg-5">
+        <div class="col-lg-6">
+          <div class="kalvi-problem__visual">
+            <img class="kalvi-problem__photo" src="assets/img/sections/problem-student.jpg" alt="Student with school bag" loading="lazy" />
+            <div class="kalvi-stat-card">
+              <div class="value">~2.22 Million</div>
+              <p class="mb-0 small" style="color:var(--kalvi-text-muted)">children are at sizeable foundational literacy risk.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ps-lg-4">
+          <span class="kalvi-eyebrow">The Problem We're Solving</span>
+          <h2 class="kalvi-section-title">53% of 7th Graders Can't Read a Simple Sentence. We're Changing That.</h2>
+          <p class="kalvi-section-text mb-4">Meet Senthil — a 3rd grade student from Vadaveekam, a rural SC/ST Government school in Ariyalur district, Tamil Nadu. He can't recognise small or capital letters in English. He studies in a single-teacher school where one teacher handles 5 subjects across multiple standards. And he is not alone.</p>
+          <ul class="kalvi-info-list">
+            <li><img src="assets/img/icons/tag-1.svg" alt="" /> As per the ASER 2024 report, ~50% in class 7–8 cannot read a simple class 2 level text.</li>
+            <li><img src="assets/img/icons/tag-2.svg" alt="" /> 6.8 million students in Tamil Nadu study in Government schools from 3rd to 8th standard.</li>
+            <li><img src="assets/img/icons/tag-3.svg" alt="" /> Without intervention, these children face limited future education opportunities &amp; employability.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="kalvi-section bg-white" id="model">
+    <div class="kalvi-container">
+      <div class="kalvi-section-header text-center mx-auto" style="max-width:48rem">
+        <span class="kalvi-eyebrow justify-content-center">Who We Are</span>
+        <h2 class="kalvi-section-title">A Practical Approach to Better Learning</h2>
+        <p class="kalvi-section-text mb-0">Kalvi40 is a program of BumbleB Trust — a non-profit organization registered in Chennai in March 2019.</p>
+      </div>
+      <div class="row" style="--bs-gutter-x:2rem; --bs-gutter-y:2rem">
+        <div class="col-md-4">
+          <article class="kalvi-card">
+            <div class="kalvi-card__img">
+              <img src="assets/img/sections/model-1.jpg" alt="" loading="lazy" />
+              <span class="kalvi-card__badge">1</span>
+            </div>
+            <div class="kalvi-card__body">
+              <h3>Free Learning App</h3>
+              <p>A lightweight Android app custom-built for Tamil Nadu Government School students — delivering curriculum-aligned content in Tamil medium, designed to work even with limited internet connectivity.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="kalvi-card">
+            <div class="kalvi-card__img">
+              <img src="assets/img/sections/model-2.jpg" alt="" loading="lazy" />
+              <span class="kalvi-card__badge">2</span>
+            </div>
+            <div class="kalvi-card__body">
+              <h3>Digitizing Government Classrooms</h3>
+              <p>For schools where children don't have personal devices, Kalvi40 sets up a low-cost digital classroom solution that works inside the Government school premises — accessible to every student during school hours.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="kalvi-card">
+            <div class="kalvi-card__img">
+              <img src="assets/img/sections/model-3.jpg" alt="" loading="lazy" />
+              <span class="kalvi-card__badge">3</span>
+            </div>
+            <div class="kalvi-card__body">
+              <h3>Women Empowerment</h3>
+              <p>Kalvi40's third pillar is a community-powered staffing model — trained local women serve as part-time teaching staff at the Government school level. This creates gainful local employment for women while ensuring that every child's learning outcomes are consistently monitored and supported.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="kalvi-approved mt-5 pt-4" style="border-top:1px solid var(--kalvi-border)">
+        <div class="row align-items-start g-4">
+          <div class="col-lg-6">
+            <span class="kalvi-eyebrow kalvi-eyebrow--gold" style="font-size:0.7rem; margin-bottom:0.5rem">Recognised by the Government of Tamil Nadu</span>
+            <h3 class="h4 fw-semibold" style="color:var(--kalvi-primary)">Approved by State Education Authorities</h3>
+          </div>
+          <div class="col-lg-6">
+            <p class="kalvi-section-text mb-0">Implemented with approvals from relevant government education authorities, ensuring credibility, compliance, and on-ground effectiveness.</p>
+          </div>
+        </div>
+        <div class="kalvi-approved-bar">
+          <span class="kalvi-approved-badge">FCRA<br>Approved</span>
+          <span class="kalvi-approved-badge">12A<br>Certified</span>
+          <span class="kalvi-approved-badge">80G<br>Certified</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="kalvi-section kalvi-app" id="app">
+    <div class="kalvi-container">
+      <div class="row align-items-center g-5 gx-lg-5">
+        <div class="col-lg-5 text-center mb-4 mb-lg-0">
+          <div class="kalvi-app__phone" role="img" aria-label="Kalvi40 app preview">
+            <img src="assets/img/pages/home-app-phone.jpg" alt="" loading="lazy" />
+          </div>
+          <a href="#" class="kalvi-link-arrow mt-3">Learn More about our app</a>
+        </div>
+        <div class="col-lg-7">
+          <span class="kalvi-eyebrow">The App</span>
+          <h2 class="kalvi-section-title mb-4">Learning That Goes Beyond Memorizing</h2>
+          <div data-feature-card class="kalvi-feature-card">
+            <div class="kalvi-feature-card__icon"><img src="assets/img/icons/feature-story.svg" alt="" /></div>
+            <div>
+              <h3 class="mb-1">Story-Based Learning</h3>
+              <p class="mb-0">Complex concepts explained through relatable stories in Tamil, making abstract ideas concrete and memorable for Tamil Nadu Government School students (Std 3–8, Tamil Medium).</p>
+            </div>
+          </div>
+          <div data-feature-card class="kalvi-feature-card kalvi-feature-card--active">
+            <div class="kalvi-feature-card__icon"><img src="assets/img/icons/feature-riddles.svg" alt="" /></div>
+            <div>
+              <h3 class="mb-1">Interactive Riddles</h3>
+              <p class="mb-0">Daily brain teasers and subject-based riddles encourage critical thinking and problem-solving in a fun, competitive environment.</p>
+            </div>
+          </div>
+          <div data-feature-card class="kalvi-feature-card">
+            <div class="kalvi-feature-card__icon"><img src="assets/img/icons/feature-offline.svg" alt="" /></div>
+            <div>
+              <h3 class="mb-1">Offline Video Library</h3>
+              <p class="mb-0">Pre-downloaded visual lessons work without internet, ensuring uninterrupted learning even in areas with poor connectivity.</p>
+            </div>
+          </div>
+          <div data-feature-card class="kalvi-feature-card">
+            <div class="kalvi-feature-card__icon"><img src="assets/img/icons/feature-gamified.svg" alt="" /></div>
+            <div>
+              <h3 class="mb-1">Gamified Progress</h3>
+              <p class="mb-0">Points, leaderboards, and achievements motivate students to learn consistently while building healthy academic competition.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="kalvi-section kalvi-impact" id="impact">
+    <div class="kalvi-container">
+      <div class="row g-5 mb-5 align-items-start">
+        <div class="col-lg-6">
+          <span class="kalvi-eyebrow kalvi-eyebrow--gold">Our Impact</span>
+          <h2 class="kalvi-section-title">Transforming Rural Education at Scale</h2>
+        </div>
+        <div class="col-lg-6">
+          <p class="kalvi-section-text mb-0">Since our launch in 2019, we've reached thousands of students across Tamil Nadu, helping them build true understanding and confidence in their academic abilities.</p>
+        </div>
+      </div>
+      <div class="kalvi-metric-bar row g-0 mb-5">
+        <div class="col-6 col-md metric-item"><div class="metric-icon">👥</div><div class="metric-value">61K+</div><div class="metric-label">Active Students</div></div>
+        <div class="col-6 col-md metric-item"><div class="metric-icon">🏫</div><div class="metric-value">1K+</div><div class="metric-label">Partner Schools</div></div>
+        <div class="col-6 col-md metric-item"><div class="metric-icon">📚</div><div class="metric-value">19K+</div><div class="metric-label">Byte Sized Videos</div></div>
+        <div class="col-6 col-md metric-item"><div class="metric-icon">⭐</div><div class="metric-value">30K+</div><div class="metric-label">Q&amp;A</div></div>
+        <div class="col-12 col-md metric-item"><div class="metric-icon">🎯</div><div class="metric-value">8.4/10</div><div class="metric-label">Social Impact Assessment Score</div></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="kalvi-testimonial">
+            <div class="testimonial-header">
+              <span class="testimonial-quote">"</span>
+              <span class="review-type">Parent's Review</span>
+            </div>
+            <blockquote>Our children did not go to LKG/UKG, they directly joined standard 1. Whatever expectations we had, we feel that got fulfilled due to the support from Kalvi40. Whatever is taught in the private schools, that is being taught here too"</blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar"></div>
+              <div class="testimonial-info">
+                <span class="testimonial-name">Parent</span>
+                <span class="testimonial-location">Keezhakulathur</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="kalvi-testimonial">
+            <div class="testimonial-header">
+              <span class="testimonial-quote">"</span>
+              <span class="review-type">Teacher's Review</span>
+            </div>
+            <blockquote>Children who would be silent most of the time also have started to speak in my sessions. Some slow learners also have started to spell their answers loudly and want to get heard in the class.</blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar"></div>
+              <div class="testimonial-info">
+                <span class="testimonial-name">Alis, Teaching Coordinator</span>
+                <span class="testimonial-location">Poovanapatti</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="kalvi-testimonial">
+            <div class="testimonial-header">
+              <span class="testimonial-quote">"</span>
+              <span class="review-type">Student's Review</span>
+            </div>
+            <blockquote>I love the daily riddles! Learning with my friends through the leaderboard makes studying fun.</blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar"></div>
+              <div class="testimonial-info">
+                <span class="testimonial-name">Ananya</span>
+                <span class="testimonial-location">Student, Class 7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="kalvi-carousel-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="kalvi-section bg-white" id="how">
+    <div class="kalvi-container">
+      <div class="kalvi-section-header text-center mx-auto" style="max-width:48rem">
+        <span class="kalvi-eyebrow justify-content-center">Our Model</span>
+        <h2 class="kalvi-section-title mb-0">Our Long-Term Assessment Model: Built for Lasting Change</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <article class="kalvi-card">
+            <div class="kalvi-card__img">
+              <img src="assets/img/sections/how-1.jpg" alt="" loading="lazy" />
+              <span class="kalvi-card__badge kalvi-card__badge--year">Year 1</span>
+            </div>
+            <div class="kalvi-card__body">
+              <h3>Lay the foundation</h3>
+              <p>Digital infrastructure is set up, content is deployed, and every student undergoes a baseline assessment. One coordinator supports every 20 schools, tracking weekly progress and driving a gap-based curriculum, with teacher outcomes tied directly to student learning.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="kalvi-card">
+            <div class="kalvi-card__img">
+              <img src="assets/img/sections/how-2.jpg" alt="" loading="lazy" />
+              <span class="kalvi-card__badge kalvi-card__badge--year">Year 2</span>
+            </div>
+            <div class="kalvi-card__body">
+              <h3>Build on what's working</h3>
+              <p>Interim assessments identify who's progressing and who needs more support. Content is refined using real classroom data, and additional staff are brought in to sustain momentum where it's needed the most.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="kalvi-card">
+            <div class="kalvi-card__img">
+              <img src="assets/img/sections/how-3.jpg" alt="" loading="lazy" />
+              <span class="kalvi-card__badge kalvi-card__badge--year">Year 3</span>
+            </div>
+            <div class="kalvi-card__body">
+              <h3>Measure the change</h3>
+              <p>ASER post-assessments show exactly how far students have come. Schools that complete the programme are equipped to run independently and the data drives Kalvi40's expansion into new districts.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <p class="text-center kalvi-section-text mt-4">Supported by partners who believe in this journey</p>
+    </div>
+  </section>
+
+  <section class="kalvi-section bg-white" id="women">
+    <div class="kalvi-container">
+      <div class="kalvi-women-card">
+        <div class="kalvi-women-banner">
+          <img src="assets/img/sections/women-group.jpg" alt="Kalvi40 team with school staff" loading="lazy" />
+        </div>
+        <div class="kalvi-women-content">
+          <div class="row g-5 align-items-start">
+            <div class="col-lg-6">
+              <span class="kalvi-eyebrow">Women Empowerment Model</span>
+              <h2 class="kalvi-section-title">Women at the Heart of Change</h2>
+              <p class="kalvi-section-text mb-0">In rural Tamil Nadu, women's access to stable and meaningful work remains limited, with workforce participation still around 30 to 40%. Kalvi40 addresses this by training and employing educated rural women as Teaching Coordinators, supporting classrooms while building their own skills, confidence, and independence.</p>
+            </div>
+            <div class="col-lg-6">
+              <div class="row g-4">
+                <div class="col-6">
+                  <div class="kalvi-women-stat">212+</div>
+                  <div class="kalvi-women-stat-label">Schools supported</div>
+                </div>
+                <div class="col-6">
+                  <div class="kalvi-women-stat">212+</div>
+                  <div class="kalvi-women-stat-label">Schools supported</div>
+                </div>
+                <div class="col-6">
+                  <div class="kalvi-women-stat">70%</div>
+                  <div class="kalvi-women-stat-label">Girl Beneficiaries</div>
+                </div>
+                <div class="col-6">
+                  <div class="kalvi-women-stat">100%</div>
+                  <div class="kalvi-women-stat-label">Female Teaching Co-ordinators</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="kalvi-section kalvi-standards-bg" id="standards">
+    <div class="kalvi-container">
+      <div class="kalvi-section-header text-center">
+        <span class="kalvi-eyebrow justify-content-center">Policy Alignment</span>
+        <h2 class="kalvi-section-title mb-0">Built on Global Standards</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="kalvi-standard-card">
+            <span class="badge-tag">SDG 4</span>
+            <h3>Quality Education</h3>
+            <p class="kalvi-section-text mb-0">Aligned with UN Sustainable Development Goal 4 — inclusive and equitable quality education for all.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="kalvi-standard-card">
+            <span class="badge-tag">NEP 2020</span>
+            <h3>National Education Policy</h3>
+            <p class="kalvi-section-text mb-0">Fully compliant with India's National Education Policy 2020, emphasizing conceptual learning and mother-tongue instruction.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="kalvi-standard-card">
+            <span class="badge-tag">UNESCO</span>
+            <h3>UNESCO Guidelines</h3>
+            <p class="kalvi-section-text mb-0">Follows UNESCO's framework for digital learning in developing regions, prioritizing accessibility and offline functionality.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="kalvi-section" id="partners">
+    <div class="kalvi-container">
+      <div class="row g-5 mb-5 align-items-start">
+        <div class="col-lg-5">
+          <h2 class="kalvi-section-title kalvi-partners-title">Working Together for Change</h2>
+        </div>
+        <div class="col-lg-7">
+          <p class="kalvi-partner-desc">Supported by partners who believe in this journey</p>
+        </div>
+      </div>
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-3">
+          <h3 class="kalvi-csr-title">Our CSR Partners</h3>
+          <div class="kalvi-partners-divider"></div>
+          <p class="kalvi-partners-subtitle">Our Partners</p>
+        </div>
+        <div class="col-lg-9">
+          <div class="kalvi-partner-row">
+            <img src="assets/img/partners/Frame 1.png" alt="Tabar Quest for India Trust" loading="lazy" />
+            <img src="assets/img/partners/Frame 2.png" alt="Charitable Trust" loading="lazy" />
+            <img src="assets/img/partners/Frame 3.png" alt="Ranchi Digital Team" loading="lazy" />
+          </div>
+          <div class="kalvi-partner-row">
+            <img src="assets/img/partners/EONE Tech.png" alt="EONE Technologies" loading="lazy" class="partner-wide" />
+            <img src="assets/img/partners/Dibella.png" alt="Dibella India" loading="lazy" class="partner-wide" />
+          </div>
+          <div class="kalvi-partner-row">
+            <img src="assets/img/partners/EXIM Bank.png" alt="India Exim Bank" loading="lazy" />
+            <img src="assets/img/partners/Fortess Smartlabs.png" alt="Fortess Smartlabs" loading="lazy" />
+            <img src="assets/img/partners/kamarajar.png" alt="Kamarajar Port Limited" loading="lazy" />
+          </div>
+          <div class="kalvi-partner-row">
+            <img src="assets/img/partners/Lenzing Fibers.png" alt="Lenzing" loading="lazy" />
+            <img src="assets/img/partners/Adore Infotech.png" alt="Adore Infotech" loading="lazy" />
+            <img src="assets/img/partners/lic.png" alt="LIC HFL" loading="lazy" />
+          </div>
+          <div class="kalvi-partner-row">
+            <img src="assets/img/partners/Chennai Port Trust.png" alt="Port of Chennai" loading="lazy" />
+            <img src="assets/img/partners/Anand Engineering.png" alt="Anand Engineering" loading="lazy" />
+            <img src="assets/img/partners/nsf.png" alt="Navsahyog Foundation" loading="lazy" />
+            <img src="assets/img/partners/mothi.png" alt="Mothi's" loading="lazy" />
+          </div>
+          <div class="kalvi-partner-row">
+            <img src="assets/img/partners/Olirum Erodu Foundation.png" alt="Olirum Erodu Foundation" loading="lazy" />
+            <img src="assets/img/partners/Radiant Group.png" alt="Radiant Group" loading="lazy" />
+            <img src="assets/img/partners/ramco.png" alt="Ramco Cements" loading="lazy" />
+            <img src="assets/img/partners/rite.png" alt="Rite Equipments" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="kalvi-section kalvi-donate" id="donate">
+    <div class="kalvi-container">
+      <div class="row g-5 gx-lg-5 align-items-center">
+        <div class="col-lg-6">
+          <span class="kalvi-eyebrow kalvi-eyebrow--gold">Support Our Mission</span>
+          <h2 class="kalvi-section-title">Help Us Reach More Students</h2>
+          <p class="kalvi-section-text mb-4">Your donation helps us create more content, reach more schools, and give thousands of rural students the quality education they deserve. Every contribution makes a real difference.</p>
+          <div class="d-flex flex-column gap-3" style="max-width:340px">
+            <a href="#" class="kalvi-btn-icon btn-hero-primary w-100 justify-content-center">
+              <img src="assets/img/icons/donate.svg" alt="" />
+              Make a Donation
+            </a>
+            <a href="#" class="btn btn-kalvi-outline btn-lg w-100 d-inline-flex align-items-center justify-content-center gap-2">
+              <img src="assets/img/icons/partnership.svg" alt="" width="16" height="16" />
+              Corporate Partnership
+            </a>
+            <p class="kalvi-donate-note mt-3 mb-0">🔒 Secure payment · Tax deductible · 80G certified</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="kalvi-donate-visual">
+            <img src="assets/img/sections/donate-students.jpg" alt="Students holding EDUCATION board" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="kalvi-final-cta">
+    <img src="assets/img/sections/cta-student.jpg" alt="" class="kalvi-final-cta__image d-none d-lg-block" aria-hidden="true" />
+    <div class="kalvi-container position-relative">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center py-2">
+          <p class="eyebrow mb-3">Join the Movement</p>
+          <h2 class="mb-4">Every <span class="highlight">Child Deserves to Understand</span>, Not Just Memorize</h2>
+          <p class="sub mb-5 mx-auto">Download Kalvi40 today and be part of the education revolution transforming rural Tamil Nadu.</p>
+          <div class="d-flex flex-wrap gap-3 justify-content-center">
+            <a href="#" class="kalvi-btn-icon btn-hero-primary btn-lg">
+              <img src="assets/img/icons/cta-download.svg" alt="" />
+              Download Free App
+            </a>
+            <a href="#" class="kalvi-btn-icon btn-hero-outline btn-lg">
+              <img src="assets/img/icons/cta-support.svg" alt="" />
+              Support Our Mission
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="kalvi-footer">
+    <div class="kalvi-container">
+      <div class="row g-5 mb-5">
+        <div class="col-lg-5">
+          <div class="brand mb-3">KALVI40</div>
+          <p class="mb-4 pe-lg-4 opacity-90">Join our newsletter to stay up to date on features and releases.</p>
+          <form class="d-flex flex-column flex-sm-row gap-2 mb-3" onsubmit="return false;">
+            <input type="email" class="form-control flex-grow-1" placeholder="Enter your email" aria-label="Email" />
+            <button type="submit" class="btn btn-subscribe">Subscribe</button>
+          </form>
+          <p class="small opacity-75 mb-0">By subscribing you agree to our <a href="#">Privacy Policy</a> and provide consent to receive updates from our company.</p>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-4 g-lg-5">
+            <div class="col-6 col-md-4">
+              <h3 class="h6 fw-semibold mb-3">FCRA</h3>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a href="fcra.html">2025 - Quarter 1</a></li>
+                <li class="mb-2"><a href="fcra.html">2025 - Quarter 2</a></li>
+                <li class="mb-2"><a href="fcra.html">2025 - Quarter 3</a></li>
+                <li><a href="fcra.html">2025 - Quarter 4</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-5">
+              <h3 class="h6 fw-semibold mb-3">Quick Links</h3>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a href="#">Webinar</a></li>
+                <li class="mb-2"><a href="#">USA Volunteers Journey</a></li>
+                <li class="mb-2"><a href="#">Volunteering Experience</a></li>
+                <li class="mb-2"><a href="#">Live Interview of Premkumar</a></li>
+                <li class="mb-2"><a href="#">Schools</a></li>
+                <li class="mb-2"><a href="#">Sunday Live Sessions</a></li>
+                <li><a href="#">Newsletter corner</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3 class="h6 fw-semibold mb-3">Follow Us</h3>
+              <ul class="list-unstyled mb-0">
+                <li><a href="#" class="social-link"><img src="assets/img/icons/social-fb.svg" alt="" /> Facebook</a></li>
+                <li><a href="#" class="social-link"><img src="assets/img/icons/social-ig.svg" alt="" /> Instagram</a></li>
+                <li><a href="#" class="social-link"><img src="assets/img/icons/social-x.svg" alt="" /> X</a></li>
+                <li><a href="#" class="social-link"><img src="assets/img/icons/social-li.svg" alt="" /> LinkedIn</a></li>
+                <li><a href="#" class="social-link"><img src="assets/img/icons/social-yt.svg" alt="" /> Youtube</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="divider" />
+      <div class="d-flex flex-column flex-md-row justify-content-between gap-3 small">
+        <span>© 2024 Kalvi40. All rights reserved.</span>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookies Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
