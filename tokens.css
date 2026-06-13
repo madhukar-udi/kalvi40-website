@@ -1,0 +1,54 @@
+:root {
+  /* Colors — from Figma variables */
+  --color-blue: #4269a7;
+  --color-text: #000000;
+  --color-white: #ffffff;
+
+  /* Colors — hardcoded per element, seeded from design */
+  --color-navy: #1c2b3a;
+  --color-navy-dark: #1d2d3e;
+  --color-blue-deep: #1e3a6e;
+  --color-slate: #334d65;
+  --color-slate-soft: #5e778f;
+  --color-yellow: #f5c541;
+  --color-cream: #fff7e2;
+  --color-cream-2: #fdedc2;
+  --color-ice: #f4faff;
+  --color-card-border: #e8f0f8;
+  --color-gold: #f5c45e;
+
+  /* Text Sizes */
+  --text-size-tiny: 12px;
+  --text-size-small: 14px;
+  --text-size-regular: 16px;
+
+  /* Font Families */
+  --font-lora: "Lora", serif;
+  --font-rubik: "Rubik", sans-serif;
+  --font-source-sans: "Source Sans 3", sans-serif;
+  --font-noto-sans: "Noto Sans", sans-serif;
+  --font-oswald: "Oswald", sans-serif;
+  --font-dm-sans: "DM Sans", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line Height */
+  --line-height-default: 1.5;
+
+  /* Layout */
+  --container-large: 1280px;
+  --padding-global: 64px;
+  --padding-section-medium: 80px;
+
+  /* Stroke */
+  --stroke-divider-width: 1px;
+
+  /* Radius */
+  --radius-medium: 0px;
+}
