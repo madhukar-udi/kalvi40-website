@@ -1767,7 +1767,7 @@ a {
 
 .footer__content {
   display: flex;
-  gap: 320px;
+  gap: 120px;
   align-items: flex-start;
 }
 
@@ -1775,7 +1775,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 500px;
+  width: 400px;
   flex-shrink: 0;
 }
 
@@ -1883,6 +1883,7 @@ a {
   color: var(--color-white);
   text-decoration: none;
   padding: 8px 0;
+  white-space: nowrap;
 }
 
 .footer__link--no-pad {
@@ -1941,3 +1942,851 @@ a {
   font-size: 14px;
   line-height: 1.5;
 }
+
+/* ============================================
+   About Page — Section 2: Compact Hero
+   ============================================ */
+.abouthero {
+  width: 100%;
+  height: 435px;
+  background:
+    url('assets/about-hero-composite.png') center / cover no-repeat,
+    linear-gradient(163deg, rgb(30, 53, 102) 0%, rgb(47, 78, 134) 50%, rgb(66, 105, 167) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.abouthero__container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 80px 0 0 72px;
+}
+
+.abouthero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.abouthero__headline {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 51.2px;
+  line-height: 57.344px;
+  color: var(--color-white);
+  width: 661px;
+}
+
+.abouthero__subtext {
+  margin-top: 10px;
+  font-family: var(--font-source-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: 16.8px;
+  line-height: 27.3px;
+  color: rgba(255, 255, 255, 0.75);
+  width: 437px;
+}
+
+.abouthero__divider {
+  margin-top: 18px;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.abouthero__stats {
+  margin-top: 32px;
+  display: flex;
+  gap: 40px;
+}
+
+.abouthero__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.abouthero__stat-number {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 28.8px;
+  line-height: 28.8px;
+  color: #f5c45e;
+}
+
+.abouthero__stat-label {
+  font-family: var(--font-source-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* ── Section 3: The Story Behind Kalvi40 ── */
+.aboutstory {
+  width: 100%;
+  background: #ffffff;
+  padding: 80px 0;
+}
+
+.aboutstory__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 72px;
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+.aboutstory__left {
+  flex: 0 0 608px;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutstory__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.aboutstory__dash {
+  width: 18px;
+  height: 2px;
+  background: #4269a7;
+  display: inline-block;
+}
+
+.aboutstory__eyebrow-text {
+  font-family: var(--font-dm-sans);
+  font-weight: var(--font-weight-bold);
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #4269a7;
+}
+
+.aboutstory__heading {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 46.4px;
+  line-height: 55.68px;
+  letter-spacing: -1.16px;
+  color: #1e3566;
+  margin: 0 0 20px 0;
+  max-width: 528px;
+}
+
+.aboutstory__intro {
+  font-family: var(--font-dm-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: 16.8px;
+  line-height: 30.24px;
+  color: #3a4a60;
+  margin: 0 0 16px 0;
+  max-width: 590px;
+}
+
+.aboutstory__body {
+  font-family: var(--font-dm-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: 16px;
+  line-height: 29.12px;
+  color: #3a4a60;
+  margin: 0 0 24px 0;
+  max-width: 601px;
+}
+
+.aboutstory__checklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.aboutstory__check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-family: var(--font-dm-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: 16px;
+  line-height: 24px;
+  color: #3a4a60;
+}
+
+.aboutstory__check-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.aboutstory__right {
+  flex: 1;
+}
+
+.aboutstory__image-wrap {
+  position: relative;
+  width: 608px;
+  height: 456px;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0px 12px 48px rgba(66, 105, 167, 0.18);
+}
+
+.aboutstory__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.aboutstory__pill {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  padding: 8px 16px;
+  border-radius: 100px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.aboutstory__pill-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.aboutstory__pill-text {
+  font-family: var(--font-dm-sans);
+  font-weight: var(--font-weight-semibold);
+  font-size: 12px;
+  line-height: 16px;
+  color: #4269a7;
+}
+
+/* ── Section 4: Founder's Story ── */
+.aboutfounder {
+  width: 100%;
+  background: #faf8f3;
+  padding: 96px 0;
+}
+
+.aboutfounder__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 72px;
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+.aboutfounder__left {
+  flex: 0 0 608px;
+}
+
+.aboutfounder__image-wrap {
+  position: relative;
+  width: 608px;
+  height: 456px;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0px 12px 48px rgba(66, 105, 167, 0.18);
+}
+
+.aboutfounder__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.aboutfounder__pill {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  padding: 8px 16px;
+  border-radius: 100px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.aboutfounder__pill-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.aboutfounder__pill-text {
+  font-family: var(--font-dm-sans);
+  font-weight: var(--font-weight-semibold);
+  font-size: 12px;
+  line-height: 16px;
+  color: #4269a7;
+}
+
+.aboutfounder__right {
+  flex: 1;
+}
+
+.aboutfounder__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.aboutfounder__dash {
+  width: 18px;
+  height: 2px;
+  background: #4269a7;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.aboutfounder__eyebrow-text {
+  font-family: var(--font-dm-sans);
+  font-weight: var(--font-weight-bold);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #4269a7;
+}
+
+.aboutfounder__heading {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 46.4px;
+  line-height: normal;
+  letter-spacing: -1.16px;
+  color: #1e3566;
+  margin: 0 0 32px 0;
+  max-width: 564px;
+}
+
+.aboutfounder__quote {
+  background: #eef2fa;
+  border-left: 3px solid #a9bfe0;
+  border-radius: 0 14px 14px 0;
+  padding: 24px 32px 24px 35px;
+  margin: 0 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.aboutfounder__quote-text {
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
+  font-size: 18.4px;
+  line-height: 30.36px;
+  color: #1e3566;
+  margin: 0;
+  max-width: 517px;
+}
+
+.aboutfounder__quote-cite {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-semibold);
+  font-size: 13.28px;
+  line-height: 19.92px;
+  letter-spacing: 0.332px;
+  color: #4269a7;
+  font-style: normal;
+}
+
+.aboutfounder__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.aboutfounder__body p {
+  font-family: var(--font-source-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: 16px;
+  line-height: 29.12px;
+  color: #3a4a60;
+  margin: 0;
+  max-width: 598px;
+}
+
+.aboutfounder__body strong {
+  font-weight: var(--font-weight-bold);
+}
+
+/* ── Section 5: Vision & Mission ── */
+.aboutvision {
+  width: 100%;
+  background: #ffffff;
+  padding: 80px 0 100px;
+}
+
+.aboutvision__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutvision__heading {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 46.4px;
+  line-height: 51.968px;
+  letter-spacing: -1.16px;
+  color: #1e3566;
+  margin: 0 0 48px 0;
+  text-align: center;
+}
+
+.aboutvision__cards {
+  display: flex;
+  gap: 71px;
+  width: 100%;
+  justify-content: center;
+}
+
+.aboutvision__card {
+  width: 479px;
+  background: #ffffff;
+  border: 1px solid #d4dfef;
+  border-radius: 22px;
+  padding: 40px;
+}
+
+.aboutvision__icon-wrap {
+  width: 56px;
+  height: 56px;
+  background: #eef2fa;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.aboutvision__icon {
+  width: 28px;
+  height: 28px;
+}
+
+.aboutvision__card-heading {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 24px;
+  line-height: 32px;
+  color: #1e3566;
+  margin: 0 0 12px 0;
+}
+
+.aboutvision__card-text {
+  font-family: var(--font-dm-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: 16px;
+  line-height: 28.8px;
+  color: #3a4a60;
+  margin: 0;
+}
+
+/* ── Section 6: The People Behind Kalvi40 ── */
+.aboutteam {
+  width: 100%;
+  background: #fff7e2;
+  padding: 96px 0 80px;
+}
+
+.aboutteam__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 72px;
+}
+
+.aboutteam__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.aboutteam__header-left {
+  flex: 0 0 auto;
+}
+
+.aboutteam__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.aboutteam__dash {
+  width: 18px;
+  height: 2px;
+  background: #4269a7;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.aboutteam__eyebrow-text {
+  font-family: var(--font-dm-sans);
+  font-weight: var(--font-weight-bold);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #4269a7;
+}
+
+.aboutteam__heading {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 46.4px;
+  line-height: 51.968px;
+  letter-spacing: -1.16px;
+  color: #1e3566;
+  margin: 0;
+  max-width: 320px;
+}
+
+.aboutteam__intro {
+  font-family: var(--font-source-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: 16.8px;
+  line-height: 30.24px;
+  color: #3a4a60;
+  margin: 52px 0 0 0;
+  max-width: 463px;
+}
+
+.aboutteam__section-row {
+  display: flex;
+  gap: 48px;
+}
+
+.aboutteam__section-labels {
+  flex: 0 0 180px;
+  padding-top: 8px;
+}
+
+.aboutteam__subheading-row {
+  margin-bottom: 32px;
+}
+
+.aboutteam__subheading {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-semibold);
+  font-size: 30px;
+  line-height: 51.968px;
+  letter-spacing: -1.16px;
+  color: #1e3566;
+  margin: 0 0 8px 0;
+}
+
+.aboutteam__subheading--secondary {
+  font-weight: var(--font-weight-regular);
+  font-size: 22px;
+  color: #3a4a60;
+}
+
+.aboutteam__subheading-line {
+  width: 129px;
+  height: 2px;
+  background: #1e3566;
+}
+
+.aboutteam__section-grids {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.aboutteam__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.aboutteam__card {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  height: 408px;
+}
+
+.aboutteam__card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.aboutteam__card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(30, 53, 102, 0.92) 0%,
+    rgba(30, 53, 102, 0.3) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  pointer-events: none;
+}
+
+.aboutteam__card-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px;
+}
+
+.aboutteam__card-name {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 17.6px;
+  line-height: 22px;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+}
+
+.aboutteam__card-role {
+  font-family: var(--font-dm-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: 12.8px;
+  line-height: 19.2px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 16px 0;
+}
+
+.aboutteam__card-pill {
+  display: inline-block;
+  background: #e8a027;
+  color: #ffffff;
+  font-family: var(--font-dm-sans);
+  font-weight: var(--font-weight-bold);
+  font-size: 10.88px;
+  line-height: 16.32px;
+  letter-spacing: 0.544px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 100px;
+}
+
+/* ── Section 7: Supported & Recognised By ── */
+.aboutpartners {
+  width: 100%;
+  background: #ffffff;
+  padding: 66px 0 60px;
+}
+
+.aboutpartners__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 85px;
+}
+
+.aboutpartners__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.aboutpartners__header-left {
+  padding-left: 133px;
+}
+
+.aboutpartners__eyebrow {
+  display: block;
+  font-family: var(--font-dm-sans);
+  font-weight: var(--font-weight-bold);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #f5c45e;
+  margin-bottom: 8px;
+}
+
+.aboutpartners__heading {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 28.8px;
+  line-height: 43.2px;
+  color: #1d2d3e;
+  margin: 0;
+}
+
+.aboutpartners__desc {
+  font-family: var(--font-dm-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: 14.08px;
+  line-height: 21.12px;
+  color: #1d2d3e;
+  margin: 0;
+  max-width: 324px;
+}
+
+.aboutpartners__logos-wrap {
+  max-width: 1044px;
+  margin: 0 auto;
+}
+
+.aboutpartners__logos-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid #d4dfef;
+  border-bottom: none;
+}
+
+.aboutpartners__logo-cell {
+  height: 148px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-right: 1px solid #d4dfef;
+  padding: 20px;
+}
+
+.aboutpartners__logo-cell:last-child {
+  border-right: none;
+}
+
+.aboutpartners__logo-img {
+  max-height: 108px;
+  max-width: 250px;
+  object-fit: contain;
+}
+
+.aboutpartners__labels-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.aboutpartners__label {
+  background: #4269a7;
+  color: #ffffff;
+  font-family: var(--font-dm-sans);
+  font-weight: var(--font-weight-semibold);
+  font-size: 12.48px;
+  line-height: 17.16px;
+  text-align: center;
+  padding: 12px;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.aboutpartners__label:last-child {
+  border-right: none;
+}
+
+.aboutpartners__dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  margin-top: 36px;
+}
+
+.aboutpartners__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #d4dfef;
+}
+
+.aboutpartners__dot--active {
+  background: #4269a7;
+}
+
+/* ── Section 8: Final CTA ── */
+.aboutcta {
+  width: 100%;
+  background: #1d2d3e;
+  padding: 127px 0 158px;
+}
+
+.aboutcta__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.aboutcta__eyebrow {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-bold);
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #94bdff;
+  margin-bottom: 23px;
+}
+
+.aboutcta__heading {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 64px;
+  line-height: 70.4px;
+  letter-spacing: -1.6px;
+  color: #ffffff;
+  margin: 0 0 71px 0;
+  max-width: 712px;
+}
+
+.aboutcta__heading--gold {
+  color: #f5c541;
+}
+
+.aboutcta__subtitle {
+  font-family: var(--font-source-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: 16.96px;
+  line-height: 27.56px;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0 0 48px 0;
+  max-width: 452px;
+}
+
+.aboutcta__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 221px;
+  height: 59px;
+  background: #4269a7;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: var(--font-source-sans);
+  font-weight: var(--font-weight-semibold);
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  box-shadow: 0px 10px 7.5px rgba(0, 0, 0, 0.1), 0px 4px 3px rgba(0, 0, 0, 0.1);
+}
+
