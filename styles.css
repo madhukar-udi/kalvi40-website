@@ -3544,3 +3544,989 @@ a {
   text-decoration: none;
 }
 
+/* ============================================
+   STORIES OF CHANGE PAGE
+   ============================================ */
+
+/* ============================================
+   Stories Section 2: Hero
+   ============================================ */
+.storieshero {
+  width: 100%;
+  background: var(--color-white);
+}
+
+.storieshero__video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1440 / 724;
+  overflow: hidden;
+}
+
+.storieshero__bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.storieshero__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.storieshero__play-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.storieshero__content {
+  padding: 80px 80px;
+}
+
+.storieshero__container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.storieshero__row {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.storieshero__col-left {
+  flex: 1;
+}
+
+.storieshero__col-right {
+  flex: 1;
+}
+
+.storieshero__heading {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 56px;
+  line-height: 1.2;
+  color: #000000;
+  margin: 0;
+}
+
+.storieshero__body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0;
+}
+
+/* ============================================
+   Stories Section 3: Teachers & Community Testimonials
+   ============================================ */
+.storiesteachers {
+  width: 100%;
+  background: var(--color-white);
+  padding: 112px 64px;
+}
+
+.storiesteachers__container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.storiesteachers__row {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.storiesteachers__left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.storiesteachers__heading {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 56px;
+  line-height: 1.2;
+  color: #000000;
+  margin: 0;
+  max-width: 634px;
+}
+
+.storiesteachers__body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0;
+}
+
+.storiesteachers__right {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.storiesteachers__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.storiesteachers__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.storiesteachers__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.storiesteachers__play-svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ============================================
+   Stories Section 4: Our Impact
+   ============================================ */
+.storiesimpact {
+  width: 100%;
+  background: #1e3a6e;
+  padding: 96px 0 77px;
+}
+
+.storiesimpact__container {
+  max-width: 1036px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.storiesimpact__header {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 75px;
+}
+
+.storiesimpact__header-left {
+  flex-shrink: 0;
+}
+
+.storiesimpact__label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.storiesimpact__label-dash {
+  width: 20px;
+  height: 2px;
+  background: #f5c541;
+}
+
+.storiesimpact__label-text {
+  font-family: var(--font-source-sans);
+  font-weight: var(--font-weight-bold);
+  font-size: 12.48px;
+  line-height: 1;
+  color: #f5c541;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.storiesimpact__heading {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 42.4px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 0;
+}
+
+.storiesimpact__body {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: 16.96px;
+  line-height: 27.56px;
+  color: rgba(255, 255, 255, 0.72);
+  margin: 0;
+  max-width: 531px;
+}
+
+.storiesimpact__stats {
+  display: flex;
+  gap: 0;
+  margin-bottom: 64px;
+}
+
+.storiesimpact__stat {
+  width: 206px;
+  height: 201px;
+  background: rgba(255, 255, 255, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 8px;
+}
+
+.storiesimpact__stat + .storiesimpact__stat {
+  margin-left: 1px;
+}
+
+.storiesimpact__stat--highlight {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.storiesimpact__stat-emoji {
+  font-size: 50px;
+  line-height: 1;
+}
+
+.storiesimpact__stat-number {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 44.8px;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.storiesimpact__stat-label {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: 13.12px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.storiesimpact__testimonials {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 77px;
+}
+
+.storiesimpact__card {
+  width: 329px;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 33px;
+  display: flex;
+  flex-direction: column;
+}
+
+.storiesimpact__card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.storiesimpact__card-quote {
+  font-family: var(--font-lora);
+  font-weight: var(--font-weight-regular);
+  font-size: 38.4px;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.storiesimpact__card-category {
+  font-family: var(--font-source-sans);
+  font-weight: var(--font-weight-bold);
+  font-size: 14.08px;
+  line-height: 1;
+  color: #f5c541;
+}
+
+.storiesimpact__card-text {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-style: italic;
+  font-size: 15.36px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.72);
+  margin: 0 0 auto 0;
+}
+
+.storiesimpact__card-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.storiesimpact__card-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+}
+
+.storiesimpact__card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.storiesimpact__card-name {
+  font-family: var(--font-source-sans);
+  font-weight: var(--font-weight-bold);
+  font-size: 14.08px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.storiesimpact__card-role {
+  font-family: var(--font-source-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: 12.16px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.storiesimpact__dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.storiesimpact__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.storiesimpact__dot--active {
+  background: #ffffff;
+}
+
+/* ============================================
+   Stories Section 5: Donate CTA
+   ============================================ */
+.storiescta {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1440 / 522;
+  margin-top: -5.694%;
+  z-index: 1;
+}
+
+.storiescta__bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 84.29%;
+  object-fit: cover;
+  display: block;
+}
+
+.storiescta__panel {
+  position: absolute;
+  top: 0;
+  right: 3.89%;
+  width: 40.97%;
+  height: 82.57%;
+  background: #f5c541;
+  clip-path: polygon(0 0, 100% 18.93%, 100% 100%, 0 100%);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 65px;
+}
+
+.storiescta__heading {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 40px;
+  line-height: 1.2;
+  color: #000000;
+  margin: 0;
+  max-width: 398px;
+}
+
+.storiescta__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #4269a7;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: 21.21px;
+  line-height: 1.5;
+  padding: 16px 32px;
+  border-radius: 16px;
+  text-decoration: none;
+  margin-top: 41px;
+}
+
+/* ============================================
+   RECOGNITION PAGE
+   ============================================ */
+
+/* ============================================
+   Recognition Section 2: Awards & Recognitions
+   ============================================ */
+.recogawards {
+  width: 100%;
+  background: #fafaf8;
+  padding: 97px 0 80px;
+}
+
+.recogawards__container {
+  width: 100%;
+  max-width: 1104px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.recogawards__title {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 48px;
+  line-height: 1.2;
+  color: #000000;
+  text-align: center;
+  margin: 0 0 152px 0;
+}
+
+.recogawards__row {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.recogawards__timeline {
+  flex: 1;
+  position: relative;
+  padding-left: 82px;
+}
+
+.recogawards__line {
+  position: absolute;
+  left: 28px;
+  top: 57px;
+  bottom: 57px;
+  width: 1px;
+  background: #4269a7;
+}
+
+.recogawards__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  position: relative;
+}
+
+.recogawards__item + .recogawards__item {
+  margin-top: 139px;
+}
+
+.recogawards__icon {
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+  background: #4269a7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: absolute;
+  left: -82px;
+  top: 0;
+  z-index: 1;
+}
+
+.recogawards__content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.recogawards__heading {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 24px;
+  line-height: 1.4;
+  color: #000000;
+  margin: 0;
+}
+
+.recogawards__body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0;
+  max-width: 489px;
+}
+
+.recogawards__cert {
+  width: 433px;
+  flex-shrink: 0;
+}
+
+.recogawards__cert-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.recogawards__dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 72px;
+}
+
+.recogawards__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.recogawards__dot--active {
+  background: #000000;
+}
+
+/* ============================================
+   Recognition Section 3: Partners
+   ============================================ */
+.recogpartners {
+  width: 100%;
+  background: #ffffff;
+  padding: 96px 0 120px;
+}
+
+.recogpartners__container {
+  width: 100%;
+  max-width: 1172px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.recogpartners__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+  margin-bottom: 80px;
+}
+
+.recogpartners__heading {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 42.4px;
+  line-height: 1.25;
+  color: #1c2b3a;
+  margin: 0;
+  max-width: 361px;
+  flex-shrink: 0;
+}
+
+.recogpartners__subtitle-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding-top: 12px;
+}
+
+.recogpartners__subtitle-line {
+  width: 2px;
+  height: 54px;
+  background: #4269a7;
+  flex-shrink: 0;
+}
+
+.recogpartners__subtitle {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16.96px;
+  line-height: 1.7;
+  color: #000000;
+  margin: 0;
+}
+
+.recogpartners__body {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.recogpartners__labels {
+  width: 240px;
+  flex-shrink: 0;
+  padding-top: 8px;
+}
+
+.recogpartners__label {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 24px;
+  line-height: 1.4;
+  color: #000000;
+  margin: 0;
+}
+
+.recogpartners__label--csr {
+  font-weight: var(--font-weight-semibold);
+  font-size: 30px;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.recogpartners__divider {
+  width: 242px;
+  height: 1px;
+  background: #000000;
+  margin: 16px 0;
+}
+
+.recogpartners__logos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.recogpartners__grid {
+  display: grid;
+  gap: 32px;
+  align-items: center;
+  justify-items: center;
+}
+
+.recogpartners__grid--csr {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.recogpartners__grid--partners {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.recogpartners__logo {
+  max-width: 100%;
+  max-height: 110px;
+  object-fit: contain;
+  display: block;
+}
+
+/* ═══════════════════════════════════════════════════
+   CONTACT US PAGE
+   ═══════════════════════════════════════════════════ */
+
+/* ── Section 2: Contact Form ── */
+.contactform {
+  background: #ffffff;
+  width: 100%;
+  padding: 112px 64px;
+}
+
+.contactform__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.contactform__left {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contactform__titles {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contactform__tagline {
+  font-family: var(--font-roboto);
+  font-weight: var(--font-weight-semibold);
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.contactform__heading {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 56px;
+  line-height: 1.2;
+  color: #000000;
+}
+
+.contactform__image {
+  width: 100%;
+  aspect-ratio: 600 / 504;
+  overflow: hidden;
+}
+
+.contactform__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contactform__form {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contactform__row {
+  display: flex;
+  gap: 24px;
+}
+
+.contactform__row .contactform__field {
+  flex: 1;
+  min-width: 0;
+}
+
+.contactform__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contactform__label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+.contactform__req {
+  color: red;
+}
+
+.contactform__input {
+  height: 48px;
+  border: 1px solid #000000;
+  padding: 12px;
+  font-family: var(--font-roboto);
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  background: transparent;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.contactform__select-wrap {
+  position: relative;
+}
+
+.contactform__select {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #000000;
+  padding: 12px 40px 12px 12px;
+  font-family: var(--font-roboto);
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  background: transparent;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url('assets/icon-chevron-down.svg');
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px 7px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.contactform__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 16px;
+  cursor: pointer;
+}
+
+.contactform__check {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #000000;
+  background: #ffffff;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.contactform__check:checked {
+  background: var(--color-blue);
+}
+
+.contactform__check-text {
+  font-family: var(--font-roboto);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.contactform__check-text u {
+  color: #000000;
+}
+
+.contactform__actions {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contactform__submit {
+  background: #4269a7;
+  color: #ffffff;
+  font-family: var(--font-roboto);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* ── Section 3: Contact Info ── */
+.contactinfo {
+  background: #ffffff;
+  width: 100%;
+}
+
+.contactinfo__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 112px 64px;
+  overflow: hidden;
+}
+
+.contactinfo__row {
+  display: flex;
+  gap: 32px;
+}
+
+.contactinfo__col {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contactinfo__icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactinfo__icon-img {
+  width: 100%;
+  height: 100%;
+}
+
+.contactinfo__body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: #000000;
+}
+
+.contactinfo__top {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contactinfo__heading {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 50px;
+  line-height: 1.4;
+  color: #000000;
+}
+
+.contactinfo__desc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+.contactinfo__detail {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+.contactinfo__map-wrap {
+  width: 100%;
+  max-width: 1312px;
+  margin: 0 auto;
+  padding: 0 64px 112px;
+}
+
+.contactinfo__map {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+

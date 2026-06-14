@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalvi40 — Contact Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Section 1: Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__header">
+      <div class="navbar__container">
+        <div class="navbar__content">
+          <a href="index.html" class="navbar__logo">
+            <img src="assets/logo.png" alt="Kalvi40" width="59" height="59">
+          </a>
+          <div class="navbar__links">
+            <a href="index.html" class="navbar__link">Home</a>
+            <a href="our-works.html" class="navbar__link">Our Works</a>
+            <a href="stories.html" class="navbar__link">Stories of Change</a>
+            <a href="recognition.html" class="navbar__link">Recognition</a>
+            <a href="about.html" class="navbar__link">About Us</a>
+            <a href="contact.html" class="navbar__link navbar__link--active">Contact Us</a>
+          </div>
+        </div>
+        <div class="navbar__actions">
+          <a href="#" class="navbar__btn navbar__btn--outline">Login</a>
+          <a href="#" class="navbar__btn navbar__btn--filled">Donate</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section 2: Contact Form -->
+  <section class="contactform" id="contactform">
+    <div class="contactform__container">
+      <div class="contactform__left">
+        <div class="contactform__titles">
+          <p class="contactform__tagline">Have a question, idea, or story to share? We're listening.</p>
+          <h2 class="contactform__heading">Contact us</h2>
+        </div>
+        <div class="contactform__image">
+          <img src="assets/contact-form-img.jpg" alt="Students learning" class="contactform__img">
+        </div>
+      </div>
+      <form class="contactform__form" onsubmit="return false;">
+        <div class="contactform__row">
+          <div class="contactform__field">
+            <label class="contactform__label">First name <span class="contactform__req">*</span></label>
+            <input type="text" class="contactform__input">
+          </div>
+          <div class="contactform__field">
+            <label class="contactform__label">Last name <span class="contactform__req">*</span></label>
+            <input type="text" class="contactform__input">
+          </div>
+        </div>
+        <div class="contactform__row">
+          <div class="contactform__field">
+            <label class="contactform__label">Email <span class="contactform__req">*</span></label>
+            <input type="email" class="contactform__input">
+          </div>
+          <div class="contactform__field">
+            <label class="contactform__label">Phone number <span class="contactform__req">*</span></label>
+            <input type="tel" class="contactform__input">
+          </div>
+        </div>
+        <div class="contactform__row">
+          <div class="contactform__field">
+            <label class="contactform__label">Country <span class="contactform__req">*</span></label>
+            <div class="contactform__select-wrap">
+              <select class="contactform__select">
+                <option value="">Select</option>
+                <option value="india">India</option>
+              </select>
+            </div>
+          </div>
+          <div class="contactform__field">
+            <label class="contactform__label">City <span class="contactform__req">*</span></label>
+            <div class="contactform__select-wrap">
+              <select class="contactform__select">
+                <option value="">Select</option>
+                <option value="chennai">Chennai</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="contactform__field">
+          <label class="contactform__label">Choose <span class="contactform__req">*</span></label>
+          <div class="contactform__select-wrap">
+            <select class="contactform__select">
+              <option value="volunteer">Volunteer</option>
+            </select>
+          </div>
+        </div>
+        <div class="contactform__field">
+          <label class="contactform__label">Volunteering for <span class="contactform__req">*</span></label>
+          <div class="contactform__select-wrap">
+            <select class="contactform__select">
+              <option value="audio">Audio Creation</option>
+            </select>
+          </div>
+        </div>
+        <div class="contactform__field">
+          <label class="contactform__label">Prefered time to connect <span class="contactform__req">*</span></label>
+          <div class="contactform__select-wrap">
+            <select class="contactform__select">
+              <option value="morning">Morning 9am to 12pm</option>
+            </select>
+          </div>
+        </div>
+        <div class="contactform__field">
+          <label class="contactform__label">How did you come to know about Kalvi 40 <span class="contactform__req">*</span></label>
+          <div class="contactform__select-wrap">
+            <select class="contactform__select">
+              <option value="friends">Friends connect</option>
+            </select>
+          </div>
+        </div>
+        <div class="contactform__field">
+          <label class="contactform__label">Any Comments</label>
+          <input type="text" class="contactform__input">
+        </div>
+        <label class="contactform__checkbox">
+          <input type="checkbox" class="contactform__check">
+          <span class="contactform__check-text">I accept the <u>Terms</u></span>
+        </label>
+        <div class="contactform__actions">
+          <button type="submit" class="contactform__submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Section 3: Contact Info -->
+  <section class="contactinfo" id="contactinfo">
+    <div class="contactinfo__container">
+      <div class="contactinfo__row">
+        <div class="contactinfo__col">
+          <div class="contactinfo__icon">
+            <img src="assets/icon-mail.svg" alt="" class="contactinfo__icon-img">
+          </div>
+          <div class="contactinfo__body">
+            <div class="contactinfo__top">
+              <h3 class="contactinfo__heading">Email</h3>
+              <p class="contactinfo__desc">Write to us anytime. We'll get back to you soon.</p>
+            </div>
+            <p class="contactinfo__detail">info@bumbleb.org.in</p>
+          </div>
+        </div>
+        <div class="contactinfo__col">
+          <div class="contactinfo__icon">
+            <img src="assets/icon-tooltip.svg" alt="" class="contactinfo__icon-img">
+          </div>
+          <div class="contactinfo__body">
+            <div class="contactinfo__top">
+              <h3 class="contactinfo__heading">Live chat</h3>
+              <p class="contactinfo__desc">Chat with us in real time. We're here to help.</p>
+            </div>
+            <p class="contactinfo__detail">Start new chat</p>
+          </div>
+        </div>
+        <div class="contactinfo__col">
+          <div class="contactinfo__icon">
+            <img src="assets/icon-call.svg" alt="" class="contactinfo__icon-img">
+          </div>
+          <div class="contactinfo__body">
+            <div class="contactinfo__top">
+              <h3 class="contactinfo__heading">Phone</h3>
+              <p class="contactinfo__desc">Call us for quick assistance or collaboration inquiries.</p>
+            </div>
+            <div class="contactinfo__detail">
+              <p>+91 9043 722 113</p>
+              <p>+91 9043 722 114</p>
+            </div>
+          </div>
+        </div>
+        <div class="contactinfo__col">
+          <div class="contactinfo__icon">
+            <img src="assets/icon-location.svg" alt="" class="contactinfo__icon-img">
+          </div>
+          <div class="contactinfo__body">
+            <div class="contactinfo__top">
+              <h3 class="contactinfo__heading">Office</h3>
+              <p class="contactinfo__desc">Visit us at our office, we'd love to meet you in person.</p>
+            </div>
+            <p class="contactinfo__detail">63, 2nd Main Road, Sankarapuram, Sithalapakkam, Chennai - 600126, India</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contactinfo__map-wrap">
+      <img src="assets/contact-map.jpg" alt="Office location map" class="contactinfo__map">
+    </div>
+  </section>
+
+  <!-- Section 4: Final CTA -->
+  <section class="cta" id="contactcta" aria-label="Join the Movement">
+    <div class="cta__student">
+      <img src="assets/cta-student.png" alt="Student">
+    </div>
+    <div class="cta__container">
+      <div class="cta__text">
+        <p class="cta__eyebrow">Join the Movement</p>
+        <h2 class="cta__heading">Join us in <span>making learning accessible</span> to every child</h2>
+      </div>
+      <div class="cta__bottom">
+        <p class="cta__subtitle">Download Kalvi40 today and be part of the education revolution transforming rural Tamil Nadu.</p>
+        <div class="cta__buttons">
+          <a href="#" class="cta__btn cta__btn--primary">
+            <img src="assets/cta-download-icon.svg" alt="" class="cta__btn-icon">
+            Download Free App
+          </a>
+          <a href="#" class="cta__btn cta__btn--outline">
+            <img src="assets/cta-heart-icon.svg" alt="" class="cta__btn-icon">
+            Support Our Mission
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer__container">
+      <div class="footer__content">
+        <div class="footer__newsletter">
+          <p class="footer__brand">KALVI40</p>
+          <p class="footer__newsletter-text">Join our newsletter to stay up to date on features and releases.</p>
+          <div class="footer__actions">
+            <div class="footer__form">
+              <input type="email" class="footer__input" placeholder="Enter your email">
+              <button class="footer__subscribe">Subscribe</button>
+            </div>
+            <p class="footer__privacy">By subscribing you agree to with our <a href="#">Privacy Policy</a> and provide consent to receive updates from our company.</p>
+          </div>
+        </div>
+        <div class="footer__links">
+          <div class="footer__column">
+            <h4 class="footer__column-title">FCRA</h4>
+            <a href="#" class="footer__link footer__link--no-pad">2025 - Quarter 1</a>
+            <a href="#" class="footer__link footer__link--no-pad">2025 - Quarter 2</a>
+            <a href="#" class="footer__link footer__link--no-pad">2025 - Quarter 3</a>
+            <a href="#" class="footer__link footer__link--no-pad">2025 - Quarter 4</a>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__column-title">Quick Links</h4>
+            <a href="#" class="footer__link">Webinar</a>
+            <a href="#" class="footer__link">USA Volunteers Journey</a>
+            <a href="#" class="footer__link">Volunteering Experience</a>
+            <a href="#" class="footer__link">Live Interview of Premkumar</a>
+            <a href="#" class="footer__link">Schools</a>
+            <a href="#" class="footer__link">Sunday Live Sessions</a>
+            <a href="#" class="footer__link">Newsletter corner</a>
+          </div>
+          <div class="footer__column footer__column--grow">
+            <h4 class="footer__column-title">Follow Us</h4>
+            <a href="#" class="footer__social-link">
+              <img src="assets/social-facebook.svg" alt="" class="footer__social-icon">
+              Facebook
+            </a>
+            <a href="#" class="footer__social-link">
+              <img src="assets/social-instagram.svg" alt="" class="footer__social-icon">
+              Instagram
+            </a>
+            <a href="#" class="footer__social-link">
+              <img src="assets/social-x.svg" alt="" class="footer__social-icon">
+              X
+            </a>
+            <a href="#" class="footer__social-link">
+              <img src="assets/social-linkedin.svg" alt="" class="footer__social-icon">
+              LinkedIn
+            </a>
+            <a href="#" class="footer__social-link">
+              <img src="assets/social-youtube.svg" alt="" class="footer__social-icon">
+              Youtube
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__credits">
+        <div class="footer__divider"></div>
+        <div class="footer__bottom">
+          <p>&copy; 2024 Kalvi40. All rights reserved.</p>
+          <div class="footer__bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookies Settings</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
