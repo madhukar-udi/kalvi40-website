@@ -546,6 +546,7 @@ a {
   font-size: 17.28px;
   line-height: 25.92px;
   color: var(--color-navy);
+  min-height: 52px;
 }
 
 .whoweare__card-body {
@@ -1157,6 +1158,7 @@ a {
 .women {
   background: var(--color-white);
   width: 100%;
+  margin-bottom: 193px;
 }
 
 .women__container {
