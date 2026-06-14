@@ -2790,3 +2790,755 @@ a {
   box-shadow: 0px 10px 7.5px rgba(0, 0, 0, 0.1), 0px 4px 3px rgba(0, 0, 0, 0.1);
 }
 
+/* ═══════════════════════════════════════════
+   OUR WORKS PAGE
+   ═══════════════════════════════════════════ */
+
+/* ── Section 2: Hero ── */
+.workshero {
+  width: 100%;
+}
+
+.workshero__bg {
+  background: #2e4d84;
+  padding: 100px 0 349px;
+}
+
+.workshero__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 227px;
+  text-align: center;
+}
+
+.workshero__heading {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 56px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 0 0 24px 0;
+}
+
+.workshero__heading--gold {
+  color: #f5c541;
+}
+
+.workshero__subtitle {
+  font-family: var(--font-source-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+  margin: 0;
+  max-width: 954px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.workshero__image-wrap {
+  max-width: 1158px;
+  margin: -269px auto 0;
+  padding-bottom: 257px;
+  position: relative;
+  z-index: 1;
+}
+
+.workshero__image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 24px;
+  display: block;
+  box-shadow: 0px 12px 48px 0px rgba(66, 105, 167, 0.18);
+}
+
+/* ── Section 3: Mobile App ── */
+.worksapp {
+  width: 100%;
+  background: #fff7e2;
+  position: relative;
+  overflow: hidden;
+  padding: 112px 0 0;
+}
+
+.worksapp__deco {
+  position: absolute;
+  top: 200px;
+  left: -530px;
+  width: 2586px;
+  max-width: none;
+  height: auto;
+  transform: rotate(10.49deg);
+  transform-origin: center center;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.worksapp__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.worksapp__title-block {
+  max-width: 768px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.worksapp__heading {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 48px;
+  line-height: 1.2;
+  color: #000000;
+  margin: 0 0 24px 0;
+}
+
+.worksapp__text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0;
+}
+
+.worksapp__row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 131px;
+  padding-bottom: 112px;
+}
+
+.worksapp__col {
+  flex: 1 1 322px;
+  max-width: 322px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.worksapp__feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.worksapp__icon--sm {
+  width: 50px;
+  height: 50px;
+}
+
+.worksapp__icon--md {
+  width: 60px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.worksapp__feature-title {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 24px;
+  line-height: 1.4;
+  color: #000000;
+  margin: 0;
+}
+
+.worksapp__feature-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0;
+}
+
+.worksapp__phone {
+  flex: 0 1 604px;
+  height: 604px;
+}
+
+.worksapp__phone-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* ── Section 4: Intuitive Learning Gallery ── */
+.worksgallery {
+  width: 100%;
+  background: #fff7e2;
+  overflow: hidden;
+  padding: 112px 64px;
+}
+
+.worksgallery__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.worksgallery__title-block {
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.worksgallery__heading {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 48px;
+  line-height: 1.2;
+  color: #000000;
+  margin: 0;
+}
+
+.worksgallery__text {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0;
+}
+
+.worksgallery__scroll {
+  display: flex;
+  gap: 32px;
+  overflow-x: auto;
+  overflow-y: clip;
+  scrollbar-width: none;
+}
+
+.worksgallery__scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.worksgallery__card {
+  flex: 0 0 430px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.worksgallery__card-img {
+  border: 1px solid #d2d2d2;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.worksgallery__card-img--home {
+  aspect-ratio: 1440 / 819;
+  border-radius: 24px;
+}
+
+.worksgallery__card-img--quiz {
+  height: 245px;
+  border-radius: 24px;
+}
+
+.worksgallery__card-img--test {
+  height: 246px;
+  border-radius: 24px;
+}
+
+.worksgallery__card-img--subject {
+  height: 245px;
+  border-radius: 12px;
+}
+
+.worksgallery__card-img--profile {
+  height: 252px;
+  border-radius: 12px;
+}
+
+.worksgallery__card-img--leaderboard {
+  height: 245px;
+  border-radius: 12px;
+}
+
+.worksgallery__card-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.worksgallery__card-caption {
+  font-family: 'Roboto', sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0;
+}
+
+.worksgallery__card-caption--ss3 {
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+.worksgallery__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.worksgallery__dots {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.worksgallery__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid #000000;
+}
+
+.worksgallery__dot--active {
+  background: #000000;
+}
+
+.worksgallery__arrows {
+  display: flex;
+  gap: 16px;
+}
+
+.worksgallery__arrow {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* ── Section 5: Key Features ── */
+.worksfeatures {
+  width: 100%;
+  background: #ffffff;
+  overflow: hidden;
+  padding: 112px 64px;
+}
+
+.worksfeatures__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.worksfeatures__heading {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 48px;
+  line-height: 1.2;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+}
+
+.worksfeatures__row {
+  display: flex;
+  gap: 80px;
+  align-items: stretch;
+  width: 100%;
+}
+
+.worksfeatures__image-wrap {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.worksfeatures__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.worksfeatures__list {
+  flex: 0 0 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  padding: 8px 0;
+}
+
+.worksfeatures__item {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.worksfeatures__num-circle {
+  flex: 0 0 94px;
+  width: 94px;
+  height: 94px;
+  border-radius: 50%;
+  background: #fdf4e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.worksfeatures__num {
+  font-family: 'Roboto', sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: 52px;
+  line-height: 1.4;
+  color: #fa9141;
+}
+
+.worksfeatures__item-content {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.worksfeatures__item-title {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 24px;
+  line-height: 1.4;
+  color: #000000;
+  margin: 0;
+}
+
+.worksfeatures__item-title--bold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.worksfeatures__item-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0;
+}
+
+/* ── Section 6: Beyond the Classroom ── */
+.worksbeyond {
+  width: 100%;
+  background: #f4faff;
+  overflow: hidden;
+  padding: 112px 64px;
+}
+
+.worksbeyond__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.worksbeyond__title-block {
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+}
+
+.worksbeyond__heading {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 48px;
+  line-height: 1.2;
+  color: #000000;
+  margin: 0;
+}
+
+.worksbeyond__text {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0;
+}
+
+.worksbeyond__cards {
+  display: flex;
+  gap: 48px;
+  width: 100%;
+}
+
+.worksbeyond__card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.worksbeyond__card-img {
+  width: 100%;
+  aspect-ratio: 395 / 408;
+  border-radius: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.worksbeyond__card-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.worksbeyond__card-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.worksbeyond__card-text {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+}
+
+/* ── Section 7: Inside the Learning Experience ── */
+.worksexperience {
+  width: 100%;
+  background: #ffffff;
+  overflow: hidden;
+  padding: 112px 64px;
+}
+
+.worksexperience__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.worksexperience__heading {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 48px;
+  line-height: 1.2;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+}
+
+.worksexperience__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 100%;
+}
+
+.worksexperience__row {
+  display: flex;
+  gap: 48px;
+}
+
+.worksexperience__cell {
+  flex: 1 1 0;
+  min-width: 0;
+  aspect-ratio: 395 / 240;
+  overflow: hidden;
+}
+
+.worksexperience__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Section 8: Expanding the Reach ── */
+.worksreach {
+  width: 100%;
+  background: #ffffff;
+  overflow: hidden;
+  padding: 112px 64px;
+}
+
+.worksreach__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.worksreach__title-block {
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.worksreach__heading {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 48px;
+  line-height: 1.2;
+  color: #000000;
+  margin: 0;
+  max-width: 462px;
+}
+
+.worksreach__text {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0;
+  max-width: 560px;
+}
+
+.worksreach__cards {
+  display: flex;
+  gap: 48px;
+  width: 100%;
+}
+
+.worksreach__card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.worksreach__card-img {
+  width: 100%;
+  aspect-ratio: 395 / 218;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.worksreach__card-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.worksreach__card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.worksreach__card-title {
+  font-family: var(--font-rubik);
+  font-weight: var(--font-weight-regular);
+  font-size: 24px;
+  line-height: 1.4;
+  color: #000000;
+  margin: 0;
+}
+
+.worksreach__card-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0;
+}
+
+/* ── Section 9: Donate CTA ── */
+.workscta {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1440 / 522;
+}
+
+.workscta__bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 84.3%;
+  object-fit: cover;
+  display: block;
+}
+
+.workscta__panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45.14%;
+  height: 82.47%;
+  background: #f5c541;
+  clip-path: polygon(0 0, 100% 18.93%, 100% 100%, 0 100%);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 60px;
+}
+
+.workscta__heading {
+  font-family: var(--font-rubik);
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.2;
+  color: #000000;
+  margin: 0;
+  max-width: 483px;
+}
+
+.workscta__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #4269a7;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-size: 21px;
+  line-height: 1.5;
+  padding: 16px 32px;
+  border-radius: 16px;
+  text-decoration: none;
+}
+
