@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kalvi40</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Noto+Sans:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&family=Rubik:wght@300;400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -336,7 +340,9 @@
       </div>
     </div>
     <div class="impact__dots">
-      <img src="assets/impact-slider-dots.svg" alt="" width="88" height="8">
+      <button class="impact__dot impact__dot--active" aria-label="Slide 1"></button>
+      <button class="impact__dot" aria-label="Slide 2"></button>
+      <button class="impact__dot" aria-label="Slide 3"></button>
     </div>
   </section>
 
@@ -623,6 +629,32 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    (function() {
+      var cards = document.querySelectorAll('.impact__testimonial');
+      var dots = document.querySelectorAll('.impact__dot');
+      var current = 0;
+
+      function setActive(idx) {
+        cards.forEach(function(c) { c.classList.remove('impact__testimonial--active'); });
+        dots.forEach(function(d) { d.classList.remove('impact__dot--active'); });
+        cards[idx].classList.add('impact__testimonial--active');
+        dots[idx].classList.add('impact__dot--active');
+        current = idx;
+      }
+
+      dots.forEach(function(dot, i) {
+        dot.addEventListener('click', function() { setActive(i); });
+      });
+
+      setActive(0);
+
+      setInterval(function() {
+        setActive((current + 1) % cards.length);
+      }, 4000);
+    })();
+  </script>
 
 </body>
 </html>

@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kalvi40 — Stories of Change</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Noto+Sans:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&family=Rubik:wght@300;400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -36,10 +40,7 @@
   <!-- Section 2: Hero -->
   <section class="storieshero" id="storieshero">
     <div class="storieshero__video">
-      <img src="assets/stories-hero-bg.jpg" alt="Kalvi40 Stories of Change" class="storieshero__bg">
-      <a href="#" class="storieshero__play">
-        <img src="assets/stories-play-icon.png" alt="Play" class="storieshero__play-img">
-      </a>
+      <iframe class="storieshero__iframe" src="https://www.youtube.com/embed/uLEv4PBPEz4" title="Kalvi40 Stories of Change" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="storieshero__content">
       <div class="storieshero__container">
@@ -161,12 +162,9 @@
         </div>
       </div>
       <div class="storiesimpact__dots">
-        <span class="storiesimpact__dot storiesimpact__dot--active"></span>
-        <span class="storiesimpact__dot"></span>
-        <span class="storiesimpact__dot"></span>
-        <span class="storiesimpact__dot"></span>
-        <span class="storiesimpact__dot"></span>
-        <span class="storiesimpact__dot"></span>
+        <button class="storiesimpact__dot storiesimpact__dot--active" aria-label="Testimonial 1"></button>
+        <button class="storiesimpact__dot" aria-label="Testimonial 2"></button>
+        <button class="storiesimpact__dot" aria-label="Testimonial 3"></button>
       </div>
     </div>
   </section>
@@ -252,5 +250,26 @@
     </div>
   </footer>
 
+<script>
+(function() {
+  var cards = document.querySelectorAll('.storiesimpact__card');
+  var dots = document.querySelectorAll('.storiesimpact__dot');
+  var current = 0;
+  function setActive(idx) {
+    cards.forEach(function(c) { c.classList.remove('storiesimpact__card--active'); });
+    dots.forEach(function(d) { d.classList.remove('storiesimpact__dot--active'); });
+    cards[idx].classList.add('storiesimpact__card--active');
+    dots[idx].classList.add('storiesimpact__dot--active');
+    current = idx;
+  }
+  dots.forEach(function(dot, i) {
+    dot.addEventListener('click', function() { setActive(i); });
+  });
+  setActive(0);
+  setInterval(function() {
+    setActive((current + 1) % cards.length);
+  }, 4000);
+})();
+</script>
 </body>
 </html>

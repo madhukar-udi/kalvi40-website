@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Noto+Sans:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&family=Rubik:wght@300;400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
-
 @import url('tokens.css');
 
 *, *::before, *::after {
@@ -127,7 +125,6 @@ a {
   width: 100%;
   height: 800px;
   background: url('assets/hero-bg.png') center / cover no-repeat;
-  margin-top: 10px;
 }
 
 .hero__content {
@@ -299,8 +296,8 @@ a {
 }
 
 .problem__container {
-  margin-left: 139px;
-  margin-right: 89px;
+  max-width: 1212px;
+  margin: 0 auto;
   display: flex;
   gap: 64px;
 }
@@ -520,6 +517,14 @@ a {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.whoweare__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(28, 43, 58, 0.15);
+  border-color: var(--color-blue);
 }
 
 .whoweare__card-image {
@@ -590,7 +595,7 @@ a {
   line-height: 16px;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  color: var(--color-gold);
+  color: var(--color-gold-dark);
 }
 
 .recognition__heading {
@@ -901,6 +906,12 @@ a {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.impact__stat:hover {
+  background: rgba(255, 255, 255, 0.18);
 }
 
 .impact__stat--highlight {
@@ -946,9 +957,16 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   padding: 32px;
-  height: 294px;
+  min-height: 330px;
   display: flex;
   flex-direction: column;
+  transition: background 0.4s ease, border-color 0.4s ease, transform 0.4s ease;
+}
+
+.impact__testimonial--active {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.03);
 }
 
 .impact__testimonial-header {
@@ -985,6 +1003,7 @@ a {
 
 .impact__testimonial-author {
   margin-top: auto;
+  padding-top: 20px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -994,8 +1013,8 @@ a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.15) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='15' r='7' fill='rgba(255,255,255,0.45)'/%3E%3Cpath d='M8 35c0-7 5.4-12 12-12s12 5 12 12' fill='rgba(255,255,255,0.45)'/%3E%3C/svg%3E") center / cover no-repeat;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
   flex-shrink: 0;
 }
 
@@ -1025,10 +1044,28 @@ a {
   margin-top: 53px;
   display: flex;
   justify-content: center;
+  gap: 10px;
   max-width: 1036px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.impact__dot {
+  width: 10px;
+  min-width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  padding: 0;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.impact__dot--active {
+  background: #ffffff;
 }
 
 /* ============================================
@@ -1522,7 +1559,7 @@ a {
 .donate__label-dash {
   width: 18px;
   height: 2px;
-  background: var(--color-yellow);
+  background: var(--color-gold-dark);
   border-radius: 4px;
 }
 
@@ -1533,7 +1570,7 @@ a {
   line-height: 18.72px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--color-yellow);
+  color: var(--color-gold-dark);
 }
 
 .donate__heading {
@@ -2549,6 +2586,8 @@ a {
     rgba(0, 0, 0, 0) 100%
   );
   pointer-events: none;
+  transition: background 0.3s ease;
+  z-index: 1;
 }
 
 .aboutteam__card-info {
@@ -2557,6 +2596,7 @@ a {
   left: 0;
   right: 0;
   padding: 24px;
+  z-index: 2;
 }
 
 .aboutteam__card-name {
@@ -2589,6 +2629,45 @@ a {
   text-transform: uppercase;
   padding: 4px 10px;
   border-radius: 100px;
+  cursor: pointer;
+}
+
+.aboutteam__card-popover {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  background: rgba(30, 58, 110, 0.95);
+  padding: 20px 24px;
+  border-radius: 12px 12px 0 0;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.aboutteam__card-popover p {
+  font-family: var(--font-dm-sans);
+  font-weight: var(--font-weight-regular);
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+.aboutteam__card:hover .aboutteam__card-popover {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.aboutteam__card:hover .aboutteam__card-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(30, 53, 102, 0.95) 0%,
+    rgba(30, 53, 102, 0.6) 60%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
 }
 
 /* ── Section 7: Supported & Recognised By ── */
@@ -2609,10 +2688,12 @@ a {
   align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 48px;
+  max-width: 1044px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .aboutpartners__header-left {
-  padding-left: 133px;
 }
 
 .aboutpartners__eyebrow {
@@ -2623,7 +2704,7 @@ a {
   line-height: 16px;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  color: #f5c45e;
+  color: var(--color-gold-dark);
   margin-bottom: 8px;
 }
 
@@ -3570,6 +3651,12 @@ a {
   display: block;
 }
 
+.storieshero__iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 .storieshero__play {
   position: absolute;
   top: 50%;
@@ -3797,6 +3884,11 @@ a {
   justify-content: center;
   text-align: center;
   gap: 8px;
+  transition: background 0.25s ease;
+}
+
+.storiesimpact__stat:hover {
+  background: rgba(255, 255, 255, 0.18);
 }
 
 .storiesimpact__stat + .storiesimpact__stat {
@@ -3843,6 +3935,14 @@ a {
   padding: 33px;
   display: flex;
   flex-direction: column;
+  min-height: 330px;
+  transition: background 0.4s ease, border-color 0.4s ease, transform 0.4s ease;
+}
+
+.storiesimpact__card--active {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: scale(1.03);
 }
 
 .storiesimpact__card-header {
@@ -3889,7 +3989,7 @@ a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.12) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='15' r='7' fill='rgba(255,255,255,0.35)'/%3E%3Cellipse cx='20' cy='35' rx='12' ry='10' fill='rgba(255,255,255,0.35)'/%3E%3C/svg%3E") center/cover no-repeat;
   border: 1.5px solid rgba(255, 255, 255, 0.2);
   flex-shrink: 0;
 }
@@ -3918,15 +4018,20 @@ a {
 
 .storiesimpact__dots {
   display: flex;
-  gap: 8px;
+  gap: 10px;
   justify-content: center;
 }
 
 .storiesimpact__dot {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
+  min-width: 10px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.3);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .storiesimpact__dot--active {
