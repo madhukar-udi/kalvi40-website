@@ -4638,6 +4638,15 @@ a {
   display: block;
 }
 
+/* ── Hamburger & Mobile Menu (hidden on desktop) ── */
+.navbar__hamburger {
+  display: none;
+}
+
+.navbar__mobile-menu {
+  display: none;
+}
+
 /* ============================================
    MOBILE RESPONSIVE — 394px
    Phase B: @media overrides only
@@ -4673,6 +4682,50 @@ a {
     border-radius: 14px;
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .navbar__hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+  }
+
+  .navbar__mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    background: #fff;
+    padding: 8px 16px 16px;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .navbar__mobile-menu--open {
+    display: flex;
+  }
+
+  .navbar__mobile-link {
+    padding: 12px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #1c2b3a;
+    text-decoration: none;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .navbar__mobile-link:last-child {
+    border-bottom: none;
+  }
+
+  .navbar__mobile-link--active {
+    color: #4269a7;
+    font-weight: 500;
   }
 
   /* ── Section 2: Hero ── */
@@ -5442,6 +5495,289 @@ a {
   .footer__bottom-links {
     flex-direction: column;
     gap: 8px;
+  }
+
+  /* ============================================
+     ABOUT PAGE — Mobile Overrides
+     ============================================ */
+
+  /* ── About Section 2: Compact Hero ── */
+  .abouthero {
+    height: auto;
+    min-height: 780px;
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .abouthero__container {
+    padding: 48px 20px 40px;
+  }
+
+  .abouthero__headline {
+    font-size: 36px;
+    line-height: 43px;
+    width: 100%;
+    max-width: 319px;
+  }
+
+  .abouthero__subtext {
+    font-size: 14px;
+    line-height: 22px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .abouthero__stats {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .abouthero__stat {
+    width: calc(50% - 12px);
+  }
+
+  .abouthero__stat-number {
+    font-size: 24.686px;
+  }
+
+  .abouthero__stat-label {
+    font-size: 10.286px;
+  }
+
+  /* ── About Section 3: Story Behind Kalvi40 ── */
+  .aboutstory {
+    padding: 48px 0;
+  }
+
+  .aboutstory__container {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 32px;
+  }
+
+  .aboutstory__left {
+    flex: none;
+    width: 100%;
+  }
+
+  .aboutstory__heading {
+    font-size: 30px;
+    line-height: 36px;
+    max-width: 100%;
+  }
+
+  .aboutstory__intro {
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 100%;
+  }
+
+  .aboutstory__body {
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 100%;
+  }
+
+  .aboutstory__right {
+    width: 100%;
+  }
+
+  .aboutstory__image-wrap {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  /* ── About Section 4: Founder's Story ── */
+  .aboutfounder {
+    padding: 48px 0;
+  }
+
+  .aboutfounder__container {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 32px;
+  }
+
+  .aboutfounder__left {
+    flex: none;
+    width: 100%;
+  }
+
+  .aboutfounder__image-wrap {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .aboutfounder__heading {
+    font-size: 30px;
+    line-height: 36px;
+    max-width: 100%;
+  }
+
+  .aboutfounder__quote {
+    padding: 20px 24px;
+    margin-bottom: 24px;
+  }
+
+  .aboutfounder__quote-text {
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 100%;
+  }
+
+  .aboutfounder__body p {
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 100%;
+  }
+
+  /* ── About Section 5: Vision & Mission ── */
+  .aboutvision {
+    padding: 48px 0;
+  }
+
+  .aboutvision__container {
+    padding: 0 20px;
+  }
+
+  .aboutvision__heading {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 32px;
+  }
+
+  .aboutvision__cards {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .aboutvision__card {
+    width: 100%;
+    padding: 32px 24px;
+  }
+
+  .aboutvision__card-heading {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .aboutvision__card-text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  /* ── About Section 6: Team Grid ── */
+  .aboutteam {
+    padding: 48px 0;
+  }
+
+  .aboutteam__container {
+    padding: 0 20px;
+  }
+
+  .aboutteam__header {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .aboutteam__heading {
+    font-size: 30px;
+    line-height: 36px;
+    max-width: 100%;
+  }
+
+  .aboutteam__intro {
+    margin-top: 16px;
+    max-width: 100%;
+  }
+
+  .aboutteam__section-row {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .aboutteam__section-labels {
+    flex: none;
+    width: 100%;
+  }
+
+  .aboutteam__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .aboutteam__card {
+    height: 280px;
+  }
+
+  .aboutteam__card-info {
+    padding: 16px;
+  }
+
+  .aboutteam__card-name {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .aboutteam__card-role {
+    font-size: 11px;
+    line-height: 16px;
+    margin-bottom: 8px;
+  }
+
+  .aboutteam__card-pill {
+    font-size: 9px;
+    padding: 3px 8px;
+  }
+
+  /* ── About Section 7: Supported & Recognised By ── */
+  .aboutpartners {
+    padding: 48px 0;
+  }
+
+  .aboutpartners__container {
+    padding: 0 20px;
+  }
+
+  .aboutpartners__header {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+    max-width: 100%;
+  }
+
+  .aboutpartners__heading {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .aboutpartners__desc {
+    max-width: 100%;
+  }
+
+  .aboutpartners__logos-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  /* ── About Section 8: Final CTA ── */
+  .aboutcta {
+    padding: 48px 20px;
+  }
+
+  .aboutcta__container {
+    padding: 32px 24px;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .aboutcta__heading {
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 100%;
   }
 
 } /* end @media */

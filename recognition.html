@@ -32,8 +32,19 @@
         <div class="navbar__actions">
           <a href="#" class="navbar__btn navbar__btn--outline">Login</a>
           <a href="#" class="navbar__btn navbar__btn--filled">Donate</a>
+          <button class="navbar__hamburger" aria-label="Open menu">
+            <img src="assets/icon-hamburger.svg" alt="" width="24" height="24">
+          </button>
         </div>
       </div>
+    </div>
+    <div class="navbar__mobile-menu">
+      <a href="index.html" class="navbar__mobile-link">Home</a>
+      <a href="our-works.html" class="navbar__mobile-link">Our Works</a>
+      <a href="stories.html" class="navbar__mobile-link">Stories of Change</a>
+      <a href="recognition.html" class="navbar__mobile-link navbar__mobile-link--active">Recognition</a>
+      <a href="about.html" class="navbar__mobile-link">About Us</a>
+      <a href="contact.html" class="navbar__mobile-link">Contact Us</a>
     </div>
   </nav>
 
@@ -239,6 +250,18 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    (function() {
+      var btn = document.querySelector('.navbar__hamburger');
+      var menu = document.querySelector('.navbar__mobile-menu');
+      if (btn && menu) {
+        btn.addEventListener('click', function() {
+          menu.classList.toggle('navbar__mobile-menu--open');
+        });
+      }
+    })();
+  </script>
 
 </body>
 </html>
