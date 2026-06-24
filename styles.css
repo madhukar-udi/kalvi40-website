@@ -4638,3 +4638,811 @@ a {
   display: block;
 }
 
+/* ============================================
+   MOBILE RESPONSIVE — 394px
+   Phase B: @media overrides only
+   ============================================ */
+
+@media (max-width: 480px) {
+
+  /* ── Section 1: Navbar ── */
+  .navbar__header {
+    height: 72px;
+    padding: 0 16px;
+  }
+
+  .navbar__content {
+    gap: 0;
+  }
+
+  .navbar__logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .navbar__links {
+    display: none;
+  }
+
+  .navbar__actions {
+    gap: 8px;
+  }
+
+  .navbar__btn {
+    padding: 5px 14px;
+    border-radius: 14px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  /* ── Section 2: Hero ── */
+  .hero {
+    height: auto;
+    min-height: 500px;
+    background-position: center top;
+  }
+
+  .hero__content {
+    padding: 36px 24px 48px;
+  }
+
+  .hero__headline {
+    font-size: 36px;
+    line-height: 43.45px;
+    letter-spacing: -0.97px;
+    width: 100%;
+    max-width: 321px;
+  }
+
+  .hero__subtext {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 254px;
+  }
+
+  .hero__ctas {
+    margin-top: 24px;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    max-width: 289px;
+  }
+
+  .hero__btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero__students {
+    margin-top: 32px;
+  }
+
+  .hero__students-count {
+    font-size: 24px;
+  }
+
+  .hero__students-label {
+    font-size: 16px;
+  }
+
+  /* ── Section 3: Stats Band ── */
+  .stats {
+    height: auto;
+    padding: 48px 24px;
+  }
+
+  .stats__container {
+    flex-wrap: wrap;
+    gap: 40px 0;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .stats__item {
+    width: 50%;
+    gap: 12px;
+  }
+
+  .stats__icon {
+    height: 50px;
+  }
+
+  .stats__number {
+    font-size: 32px;
+  }
+
+  .stats__label {
+    font-size: 14px;
+    line-height: 20px;
+    white-space: normal;
+    text-align: center;
+    max-width: 120px;
+  }
+
+  /* ── Section 4: The Problem We're Solving ── */
+  .problem {
+    padding: 48px 0 60px;
+  }
+
+  .problem__container {
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 20px;
+  }
+
+  .problem__left {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+  }
+
+  .problem__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .problem__callout {
+    width: 188px;
+    top: auto;
+    bottom: -30px;
+    left: auto;
+    right: 20px;
+    padding: 13px 15px 12px 18px;
+    gap: 8px;
+    border-radius: 6px;
+    border-left-width: 2.5px;
+  }
+
+  .problem__callout-number {
+    font-size: 24.56px;
+    line-height: 24.56px;
+  }
+
+  .problem__callout-text {
+    font-size: 8.4px;
+    line-height: 11.5px;
+    width: auto;
+  }
+
+  .problem__right {
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .problem__headline {
+    font-size: 30px;
+    line-height: 36px;
+    width: 100%;
+  }
+
+  .problem__body {
+    font-size: 14px;
+    line-height: normal;
+    width: 100%;
+  }
+
+  .problem__chips {
+    margin-top: 10px;
+  }
+
+  .problem__chip {
+    height: auto;
+    padding: 9px 14px;
+  }
+
+  .problem__chip--1,
+  .problem__chip--2,
+  .problem__chip--3 {
+    width: 100%;
+  }
+
+  .problem__chip-text {
+    font-size: 13.12px;
+    line-height: 19.68px;
+    white-space: normal;
+  }
+
+  /* ── Section 5: Who We Are ── */
+  .whoweare {
+    padding-bottom: 60px;
+  }
+
+  .whoweare__title {
+    font-size: 30px;
+    line-height: 36px;
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .whoweare__subtitle {
+    font-size: 14px;
+    line-height: normal;
+    width: 100%;
+    max-width: 343px;
+    padding: 0 20px;
+  }
+
+  .whoweare__cards {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 40px;
+    gap: 24px;
+    box-sizing: border-box;
+  }
+
+  .whoweare__card-image {
+    height: 192px;
+  }
+
+  .whoweare__card-content {
+    padding: 24px;
+  }
+
+  .whoweare__card-title {
+    font-size: 16px;
+    line-height: 24px;
+    min-height: auto;
+  }
+
+  .whoweare__card-body {
+    font-size: 14px;
+    line-height: 22.75px;
+  }
+
+  /* ── Section 6: Recognition ── */
+  .recognition {
+    padding-bottom: 60px;
+  }
+
+  .recognition__container {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .recognition__text-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .recognition__heading {
+    font-size: 30px;
+    line-height: 36px;
+    white-space: normal;
+    width: 279px;
+  }
+
+  .recognition__description {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .recognition__certs {
+    margin-top: 32px;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    background: transparent;
+    border: none;
+  }
+
+  .recognition__cert {
+    height: 113px;
+    border-radius: 0;
+  }
+
+  /* ── Section 7: The App ── */
+  .theapp {
+    padding: 48px 0 60px;
+  }
+
+  .theapp__container {
+    flex-direction: column;
+    gap: 32px;
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .theapp__left {
+    padding-top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .theapp__phone {
+    width: 200px;
+    height: auto;
+  }
+
+  .theapp__play {
+    left: 80px;
+    top: 200px;
+  }
+
+  .theapp__learn-more {
+    margin-left: 0;
+    margin-top: 24px;
+    text-align: center;
+  }
+
+  .theapp__right {
+    width: 100%;
+  }
+
+  .theapp__heading {
+    font-size: 24px;
+    line-height: 32px;
+    width: 100%;
+    max-width: 317px;
+  }
+
+  .theapp__card {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    gap: 16px;
+    box-sizing: border-box;
+  }
+
+  .theapp__card--active {
+    padding-left: 24px;
+  }
+
+  .theapp__card-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .theapp__card-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .theapp__card-body {
+    font-size: 14px;
+    line-height: 22.75px;
+  }
+
+  /* ── Section 8: Our Impact ── */
+  .impact {
+    padding: 60px 0 48px;
+  }
+
+  .impact__header {
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .impact__header-left {
+    width: 100%;
+  }
+
+  .impact__heading {
+    font-size: 30px;
+    line-height: 36px;
+    width: 100%;
+    max-width: 279px;
+  }
+
+  .impact__header-right {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .impact__body {
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  .impact__stats {
+    margin-top: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .impact__stat {
+    height: 171px;
+  }
+
+  .impact__stat-emoji {
+    font-size: 36px;
+  }
+
+  .impact__stat-number {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .impact__stat-label {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .impact__testimonials {
+    margin-top: 32px;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    max-width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .impact__testimonial {
+    padding: 32px;
+    min-height: 294px;
+  }
+
+  .impact__dots {
+    margin-top: 32px;
+  }
+
+  /* ── Section 9: Our Model ── */
+  .ourmodel {
+    padding: 60px 0 60px;
+  }
+
+  .ourmodel__heading {
+    font-size: 30px;
+    line-height: 36px;
+    width: 100%;
+    max-width: 340px;
+    min-height: auto;
+  }
+
+  .ourmodel__cards {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 24px;
+  }
+
+  .ourmodel__card {
+    min-height: auto;
+  }
+
+  .ourmodel__card-image {
+    height: 192px;
+  }
+
+  .ourmodel__card-content {
+    padding: 24px;
+  }
+
+  .ourmodel__card-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .ourmodel__card-body {
+    font-size: 14px;
+    line-height: 22.75px;
+  }
+
+  /* ── Section 10: Women Empowerment ── */
+  .women {
+    margin-bottom: 60px;
+  }
+
+  .women__container {
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .women__banner {
+    height: 180px;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .women__panel {
+    flex-direction: column;
+    gap: 32px;
+    padding: 24px 20px 32px;
+    border-radius: 0 0 16px 16px;
+  }
+
+  .women__left {
+    max-width: 100%;
+  }
+
+  .women__heading {
+    font-size: 30px;
+    line-height: 36px;
+    width: 100%;
+  }
+
+  .women__body {
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  .women__stats {
+    gap: 32px;
+    padding-top: 0;
+    align-items: flex-start;
+  }
+
+  .women__stats-row {
+    gap: 32px;
+  }
+
+  .women__stats-row:last-child {
+    gap: 32px;
+  }
+
+  .women__stats-row:first-child .women__stat {
+    width: auto;
+  }
+
+  .women__stats-row:last-child .women__stat:first-child,
+  .women__stats-row:last-child .women__stat:last-child {
+    width: auto;
+  }
+
+  .women__stat-number {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .women__stat-label {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  /* ── Section 11: Policy Alignment ── */
+  .alignment {
+    padding: 60px 0 48px;
+  }
+
+  .alignment__heading {
+    font-size: 30px;
+    line-height: 36px;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .alignment__cards {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .alignment__card {
+    padding: 32px 24px 28px;
+    min-height: auto;
+  }
+
+  .alignment__card-body {
+    width: 100%;
+  }
+
+  /* ── Section 12: Partners ── */
+  .partners {
+    padding: 60px 0;
+  }
+
+  .partners__container {
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .partners__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .partners__heading {
+    font-size: 30px;
+    line-height: 36px;
+    width: 100%;
+  }
+
+  .partners__divider {
+    display: none;
+  }
+
+  .partners__subtitle {
+    font-size: 14px;
+    line-height: normal;
+    width: 100%;
+  }
+
+  .partners__section {
+    margin-top: 48px;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .partners__section--second {
+    margin-top: 40px;
+  }
+
+  .partners__section-label {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .partners__logos {
+    gap: 24px 20px;
+  }
+
+  .partners__logo {
+    height: 50px;
+    max-width: 120px;
+  }
+
+  .partners__logo--wide {
+    max-width: 160px;
+  }
+
+  /* ── Section 13: Donate ── */
+  .donate {
+    min-height: auto;
+  }
+
+  .donate__container {
+    max-width: 100%;
+    padding: 48px 20px 40px;
+    box-sizing: border-box;
+  }
+
+  .donate__heading {
+    font-size: 30px;
+    line-height: 36px;
+    width: 100%;
+  }
+
+  .donate__body {
+    font-size: 14px;
+    line-height: normal;
+    width: 100%;
+  }
+
+  .donate__buttons {
+    margin-top: 32px;
+    width: 100%;
+  }
+
+  .donate__btn {
+    width: 100%;
+  }
+
+  .donate__image {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 280px;
+  }
+
+  /* ── Section 14: Final CTA ── */
+  .cta {
+    padding: 48px 0 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta__student {
+    position: relative;
+    width: 213px;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    height: 507px;
+    order: 2;
+    align-self: flex-start;
+    margin-left: 3px;
+    pointer-events: none;
+  }
+
+  .cta__student img {
+    object-position: top left;
+  }
+
+  .cta__container {
+    max-width: 100%;
+    margin-left: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    gap: 32px;
+    order: 1;
+  }
+
+  .cta__heading {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.8px;
+  }
+
+  .cta__bottom {
+    width: 100%;
+    gap: 32px;
+  }
+
+  .cta__subtitle {
+    font-size: 14px;
+    line-height: normal;
+    width: 100%;
+  }
+
+  .cta__buttons {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .cta__btn--primary,
+  .cta__btn--outline {
+    width: 100%;
+  }
+
+  /* ── Section 15: Footer ── */
+  .footer {
+    padding: 48px 20px;
+  }
+
+  .footer__container {
+    gap: 48px;
+  }
+
+  .footer__content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer__newsletter {
+    width: 100%;
+    gap: 16px;
+  }
+
+  .footer__brand {
+    font-size: 28px;
+  }
+
+  .footer__form {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer__subscribe {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer__links {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .footer__link {
+    white-space: normal;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer__bottom-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+} /* end @media */
+
