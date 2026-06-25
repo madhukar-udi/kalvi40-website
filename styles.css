@@ -6295,4 +6295,169 @@ a {
     margin-top: 24px;
   }
 
+  /* ── Recognition Section 2: Awards & Recognitions ── */
+  .recogawards {
+    padding: 48px 0;
+  }
+
+  .recogawards__container {
+    padding: 0 16px;
+  }
+
+  .recogawards__title {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .recogawards__row {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .recogawards__cert {
+    width: 100%;
+    order: -1;
+  }
+
+  .recogawards__timeline {
+    padding-left: 60px;
+  }
+
+  .recogawards__line {
+    left: 20px;
+  }
+
+  .recogawards__icon {
+    width: 42px;
+    height: 42px;
+    left: -60px;
+  }
+
+  .recogawards__item + .recogawards__item {
+    margin-top: 48px;
+  }
+
+  .recogawards__heading {
+    font-size: 20px;
+  }
+
+  .recogawards__body {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .recogawards__dots {
+    margin-top: 40px;
+  }
+
+  /* ── Recognition Section 3: Partners ── */
+  .recogpartners {
+    padding: 48px 0;
+  }
+
+  .recogpartners__container {
+    padding: 0 16px;
+  }
+
+  .recogpartners__header {
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .recogpartners__heading {
+    font-size: 30px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .recogpartners__subtitle-wrap {
+    padding-top: 0;
+    justify-content: center;
+  }
+
+  .recogpartners__subtitle {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .recogpartners__body {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .recogpartners__labels {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .recogpartners__divider {
+    display: none;
+  }
+
+  .recogpartners__label {
+    font-size: 18px;
+  }
+
+  .recogpartners__label--csr {
+    font-size: 20px;
+  }
+
+  .recogpartners__grid--csr,
+  .recogpartners__grid--partners {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .recogpartners__logo {
+    max-height: 80px;
+  }
+
+  /* ── Contact Section 2: Contact Form ── */
+  .contactform {
+    padding: 48px 16px;
+  }
+
+  .contactform__container {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .contactform__heading {
+    font-size: 30px;
+  }
+
+  .contactform__image {
+    display: none;
+  }
+
+  .contactform__row {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .contactform__submit {
+    width: 100%;
+  }
+
+  /* ── Contact Section 3: Contact Info ── */
+  .contactinfo__container {
+    padding: 48px 16px;
+  }
+
+  .contactinfo__row {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .contactinfo__heading {
+    font-size: 24px;
+  }
+
+  .contactinfo__map-wrap {
+    padding: 0 16px 48px;
+  }
+
 } /* end @media */
