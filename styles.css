@@ -6133,4 +6133,166 @@ a {
     margin-top: 24px;
   }
 
+  /* ── Stories Section 2: Hero ── */
+  .storieshero__video {
+    aspect-ratio: 394 / 222;
+  }
+
+  .storieshero__content {
+    padding: 40px 16px;
+  }
+
+  .storieshero__row {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .storieshero__heading {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .storieshero__body {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  /* ── Stories Section 3: Teachers & Community Testimonials ── */
+  .storiesteachers {
+    padding: 48px 16px;
+  }
+
+  .storiesteachers__row {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .storiesteachers__heading {
+    font-size: 30px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .storiesteachers__body {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .storiesteachers__right {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 362 / 300;
+  }
+
+  /* ── Stories Section 4: Our Impact ── */
+  .storiesimpact {
+    padding: 48px 0;
+  }
+
+  .storiesimpact__container {
+    padding: 0 16px;
+  }
+
+  .storiesimpact__header {
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .storiesimpact__label {
+    justify-content: center;
+  }
+
+  .storiesimpact__heading {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .storiesimpact__body {
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .storiesimpact__stats {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  .storiesimpact__stat {
+    width: 50%;
+    height: 160px;
+    box-sizing: border-box;
+  }
+
+  .storiesimpact__stat + .storiesimpact__stat {
+    margin-left: 0;
+  }
+
+  .storiesimpact__stat:nth-child(5) {
+    width: 100%;
+  }
+
+  .storiesimpact__stat-emoji {
+    font-size: 36px;
+  }
+
+  .storiesimpact__stat-number {
+    font-size: 32px;
+  }
+
+  .storiesimpact__stat-label {
+    font-size: 12px;
+  }
+
+  .storiesimpact__testimonials {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .storiesimpact__card {
+    width: 100%;
+    min-height: auto;
+    padding: 24px;
+  }
+
+  /* ── Stories Section 5: Donate CTA ── */
+  .storiescta {
+    aspect-ratio: auto;
+    margin-top: 0;
+  }
+
+  .storiescta__bg {
+    position: relative;
+    height: auto;
+    width: 100%;
+    aspect-ratio: 394 / 250;
+  }
+
+  .storiescta__panel {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+    height: auto;
+    clip-path: none;
+    padding: 48px 28px;
+    margin-top: -30px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .storiescta__heading {
+    font-size: 30px;
+    max-width: 301px;
+  }
+
+  .storiescta__btn {
+    margin-top: 24px;
+  }
+
 } /* end @media */
