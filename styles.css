@@ -5826,5 +5826,311 @@ a {
     max-width: 100%;
   }
 
-} /* end @media */
+  /* ── Our Works Section 2: Hero ── */
+  .workshero__bg {
+    padding: 48px 0 120px;
+  }
 
+  .workshero__container {
+    padding: 0 24px;
+  }
+
+  .workshero__heading {
+    font-size: 36px;
+    line-height: normal;
+  }
+
+  .workshero__subtitle {
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 100%;
+  }
+
+  .workshero__image-wrap {
+    max-width: 344px;
+    margin: -80px auto 0;
+    padding-bottom: 40px;
+  }
+
+  .workshero__image {
+    height: 179px;
+    border-radius: 12px;
+  }
+
+  /* ── Our Works Section 3: Mobile App ── */
+  .worksapp {
+    padding: 48px 0 0;
+  }
+
+  .worksapp__deco {
+    display: none;
+  }
+
+  .worksapp__container {
+    padding: 0 16px;
+  }
+
+  .worksapp__heading {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .worksapp__text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .worksapp__row {
+    flex-direction: column;
+    gap: 48px;
+    margin-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .worksapp__col {
+    flex: none;
+    max-width: 100%;
+    width: 100%;
+    gap: 48px;
+  }
+
+  .worksapp__phone {
+    flex: none;
+    height: 256px;
+    width: 256px;
+    margin: 0 auto;
+    order: -1;
+  }
+
+  /* ── Our Works Section 4: Gallery ── */
+  .worksgallery {
+    padding: 48px 16px;
+  }
+
+  .worksgallery__container {
+    gap: 40px;
+  }
+
+  .worksgallery__title-block {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .worksgallery__heading {
+    font-size: 30px;
+  }
+
+  .worksgallery__text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .worksgallery__scroll {
+    gap: 16px;
+  }
+
+  .worksgallery__card {
+    flex: 0 0 300px;
+  }
+
+  .worksgallery__card-img--home,
+  .worksgallery__card-img--quiz,
+  .worksgallery__card-img--test,
+  .worksgallery__card-img--subject,
+  .worksgallery__card-img--profile,
+  .worksgallery__card-img--leaderboard {
+    height: auto;
+    border-radius: 16px;
+  }
+
+  .worksgallery__card-caption {
+    font-size: 16px;
+  }
+
+  .worksgallery__arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* ── Our Works Section 5: Key Features ── */
+  .worksfeatures {
+    padding: 48px 16px;
+  }
+
+  .worksfeatures__container {
+    gap: 40px;
+  }
+
+  .worksfeatures__heading {
+    font-size: 30px;
+  }
+
+  .worksfeatures__row {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .worksfeatures__image-wrap {
+    display: none;
+  }
+
+  .worksfeatures__list {
+    flex: none;
+    width: 100%;
+    max-height: none;
+    overflow: visible;
+    gap: 32px;
+  }
+
+  .worksfeatures__num-circle {
+    flex: 0 0 80px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .worksfeatures__num {
+    font-size: 40px;
+  }
+
+  .worksfeatures__item-title {
+    font-size: 20px;
+  }
+
+  .worksfeatures__item-text {
+    font-size: 14px;
+  }
+
+  /* ── Our Works Section 6: Beyond the Classroom ── */
+  .worksbeyond {
+    padding: 48px 16px;
+  }
+
+  .worksbeyond__container {
+    gap: 40px;
+  }
+
+  .worksbeyond__heading {
+    font-size: 30px;
+  }
+
+  .worksbeyond__text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .worksbeyond__cards {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .worksbeyond__card-img {
+    aspect-ratio: 362 / 362;
+    border-radius: 24px;
+  }
+
+  .worksbeyond__card-title {
+    font-size: 20px;
+  }
+
+  .worksbeyond__card-text {
+    font-size: 14px;
+  }
+
+  /* ── Our Works Section 7: Inside the Learning Experience ── */
+  .worksexperience {
+    padding: 48px 16px;
+  }
+
+  .worksexperience__container {
+    gap: 40px;
+  }
+
+  .worksexperience__heading {
+    font-size: 30px;
+  }
+
+  .worksexperience__row {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .worksexperience__cell {
+    flex: 0 0 calc(50% - 8px);
+    aspect-ratio: 173 / 120;
+    border-radius: 16px;
+  }
+
+  /* ── Our Works Section 8: Expanding the Reach ── */
+  .worksreach {
+    padding: 48px 16px;
+  }
+
+  .worksreach__container {
+    gap: 40px;
+  }
+
+  .worksreach__heading {
+    font-size: 30px;
+    max-width: 100%;
+  }
+
+  .worksreach__text {
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 100%;
+  }
+
+  .worksreach__cards {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .worksreach__card-img {
+    aspect-ratio: 362 / 200;
+  }
+
+  .worksreach__card-title {
+    font-size: 20px;
+  }
+
+  .worksreach__card-text {
+    font-size: 14px;
+  }
+
+  /* ── Our Works Section 9: Donate CTA ── */
+  .workscta {
+    aspect-ratio: auto;
+  }
+
+  .workscta__bg {
+    position: relative;
+    height: auto;
+    width: 100%;
+    aspect-ratio: 394 / 250;
+  }
+
+  .workscta__panel {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+    height: auto;
+    clip-path: none;
+    padding: 48px 28px;
+    margin-top: -30px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .workscta__heading {
+    font-size: 30px;
+    font-weight: 500;
+    max-width: 301px;
+  }
+
+  .workscta__btn {
+    font-size: 21px;
+    margin-top: 24px;
+  }
+
+} /* end @media */
