@@ -5503,45 +5503,58 @@ a {
 
   /* ── About Section 2: Compact Hero ── */
   .abouthero {
-    height: auto;
-    min-height: 780px;
-    background-position: center top;
-    background-size: cover;
+    height: 780px;
+    background:
+      url('assets/about-hero-composite.png') 100% bottom / auto 50% no-repeat,
+      linear-gradient(163deg, rgb(30, 53, 102) 0%, rgb(47, 78, 134) 50%, rgb(66, 105, 167) 100%);
+    overflow: hidden;
   }
 
   .abouthero__container {
-    padding: 48px 20px 40px;
+    padding: 55px 20px 0 29px;
+    box-sizing: border-box;
+    width: 100%;
   }
 
   .abouthero__headline {
     font-size: 36px;
-    line-height: 43px;
-    width: 100%;
-    max-width: 319px;
+    line-height: normal;
+    width: 319px;
+    max-width: 100%;
   }
 
   .abouthero__subtext {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 12px;
+    line-height: 18px;
     width: 100%;
     max-width: 100%;
   }
 
+  .abouthero__divider {
+    display: none;
+  }
+
   .abouthero__stats {
-    flex-wrap: wrap;
-    gap: 24px;
+    flex-wrap: nowrap;
+    gap: 0;
+    margin-top: 36px;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .abouthero__stat {
-    width: calc(50% - 12px);
+    width: auto;
   }
 
   .abouthero__stat-number {
     font-size: 24.686px;
+    line-height: 24.686px;
   }
 
   .abouthero__stat-label {
     font-size: 10.286px;
+    line-height: 13.714px;
+    letter-spacing: 0.5143px;
   }
 
   /* ── About Section 3: Story Behind Kalvi40 ── */
@@ -5551,13 +5564,20 @@ a {
 
   .aboutstory__container {
     flex-direction: column;
-    padding: 0 20px;
+    padding: 0 16px;
     gap: 32px;
   }
 
   .aboutstory__left {
     flex: none;
     width: 100%;
+    order: 2;
+  }
+
+  .aboutstory__right {
+    order: 1;
+    width: 100%;
+    flex: none;
   }
 
   .aboutstory__heading {
@@ -5578,14 +5598,11 @@ a {
     max-width: 100%;
   }
 
-  .aboutstory__right {
-    width: 100%;
-  }
-
   .aboutstory__image-wrap {
     width: 100%;
     height: auto;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 362 / 483;
+    border-radius: 24px;
   }
 
   /* ── About Section 4: Founder's Story ── */
@@ -5704,12 +5721,12 @@ a {
   }
 
   .aboutteam__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 16px;
   }
 
   .aboutteam__card {
-    height: 280px;
+    height: 380px;
   }
 
   .aboutteam__card-info {
@@ -5757,10 +5774,39 @@ a {
     max-width: 100%;
   }
 
-  .aboutpartners__logos-row {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+  .aboutpartners__logos-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
   }
+
+  .aboutpartners__logos-row {
+    display: contents;
+  }
+
+  .aboutpartners__labels-row {
+    display: contents;
+  }
+
+  .aboutpartners__logo-cell {
+    border-right: none;
+    border-bottom: none;
+    order: var(--cell-order);
+  }
+
+  .aboutpartners__logo-cell:nth-child(1) { order: 1; }
+  .aboutpartners__logo-cell:nth-child(2) { order: 3; }
+  .aboutpartners__logo-cell:nth-child(3) { order: 5; }
+
+  .aboutpartners__label {
+    border-right: none;
+    height: auto;
+    padding: 16px;
+    order: var(--label-order);
+  }
+
+  .aboutpartners__label:nth-child(1) { order: 2; }
+  .aboutpartners__label:nth-child(2) { order: 4; }
+  .aboutpartners__label:nth-child(3) { order: 6; }
 
   /* ── About Section 8: Final CTA ── */
   .aboutcta {
