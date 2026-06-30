@@ -1932,6 +1932,12 @@ a {
   padding: 0;
 }
 
+.footer__link--disabled {
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;
+}
+
 .footer__social-link {
   display: flex;
   align-items: center;
