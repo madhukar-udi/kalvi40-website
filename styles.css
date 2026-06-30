@@ -1282,35 +1282,19 @@ a {
   align-items: flex-end;
 }
 
-.women__stats-row {
-  display: flex;
-  gap: 24px;
-}
-
-.women__stats-row:last-child {
-  gap: 59px;
+.women__stats--three {
+  flex-direction: row;
+  gap: 48px;
+  padding-top: 18px;
+  align-items: flex-start;
+  justify-content: flex-end;
 }
 
 .women__stat {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-}
-
-.women__stats-row:first-child .women__stat {
-  width: 110px;
-}
-
-.women__stats-row:last-child .women__stat:first-child {
-  width: 80px;
-}
-
-.women__stats-row:last-child .women__stat:last-child {
-  width: 104px;
-}
-
-.women__stats-row:last-child .women__stat {
   gap: 5px;
+  min-width: 100px;
 }
 
 .women__stat-number {
