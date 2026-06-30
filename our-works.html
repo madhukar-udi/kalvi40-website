@@ -147,14 +147,6 @@
         </div>
       </div>
       <div class="worksgallery__controls">
-        <div class="worksgallery__dots">
-          <span class="worksgallery__dot worksgallery__dot--active"></span>
-          <span class="worksgallery__dot"></span>
-          <span class="worksgallery__dot"></span>
-          <span class="worksgallery__dot"></span>
-          <span class="worksgallery__dot"></span>
-          <span class="worksgallery__dot"></span>
-        </div>
         <div class="worksgallery__arrows">
           <button class="worksgallery__arrow" aria-label="Previous">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -426,28 +418,15 @@
 <script>
 (function() {
   var scroll = document.querySelector('.worksgallery__scroll');
-  var cards = document.querySelectorAll('.worksgallery__card');
-  var dots = document.querySelectorAll('.worksgallery__dot');
   var arrows = document.querySelectorAll('.worksgallery__arrow');
-  var current = 0;
+  var cardWidth = 430 + 32;
 
-  function goTo(idx) {
-    if (idx < 0) idx = cards.length - 1;
-    if (idx >= cards.length) idx = 0;
-    cards[idx].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
-    dots.forEach(function(d) { d.classList.remove('worksgallery__dot--active'); });
-    dots[idx].classList.add('worksgallery__dot--active');
-    current = idx;
-  }
-
-  dots.forEach(function(dot, i) {
-    dot.addEventListener('click', function() { goTo(i); });
+  arrows[0].addEventListener('click', function() {
+    scroll.scrollBy({ left: -cardWidth, behavior: 'smooth' });
   });
-
-  arrows[0].addEventListener('click', function() { goTo(current - 1); });
-  arrows[1].addEventListener('click', function() { goTo(current + 1); });
-
-  setInterval(function() { goTo(current + 1); }, 5000);
+  arrows[1].addEventListener('click', function() {
+    scroll.scrollBy({ left: cardWidth, behavior: 'smooth' });
+  });
 })();
 </script>
 
